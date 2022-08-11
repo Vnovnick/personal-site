@@ -1,2 +1,9 @@
 $background-color : rgba(0, 0, 0, 0.829);
 
+.sidebar{
+    background-color: $background-color;
+    width: 200px;
+    height: 100vh;
+    float: left;
+    position: fixed;
+}
