@@ -1,9 +1,17 @@
 $background-color : rgba(0, 0, 0, 0.829);
+$font-color: rgb(162, 162, 212);
 
 .sidebar{
-    background-color: $background-color;
-    width: 200px;
-    height: 100vh;
+    background-color: $background-color !important;
+    width: 23vw;
+    height: 100%;
     float: left;
     position: fixed;
+    #fullName{
+        color: white;
+        text-align: center;
+    }
+    a{
+        color: $font-color !important;
+    }
 }
