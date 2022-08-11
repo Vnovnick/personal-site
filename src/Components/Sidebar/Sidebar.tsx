@@ -8,7 +8,7 @@ const Sidebar: FC = () => {
     window.onload = () => {
         fullNameResize();
     };
-    const fullNameResize = () => {
+    const fullNameResize = (): void => {
         let winWidth: number = window.innerWidth;
         if (winWidth < 1270){
             (document.getElementById('fullName') as HTMLFormElement).innerHTML = 'Nick S.';
