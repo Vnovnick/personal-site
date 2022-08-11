@@ -10,9 +10,9 @@ const Sidebar: FC = () => {
     };
     const fullNameResize = () => {
         let winWidth: number = window.innerWidth;
-        if (winWidth < 1100){
+        if (winWidth < 1270){
             (document.getElementById('fullName') as HTMLFormElement).innerHTML = 'Nick S.';
-        }else if (winWidth >= 1101){
+        }else if (winWidth >= 1271){
             (document.getElementById('fullName') as HTMLFormElement).innerHTML = 'Nicholas Safonov';
         }
     };
