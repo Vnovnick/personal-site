@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import Sidebar from './Components/Sidebar/Sidebar';
 import SiteContent from './Components/SiteContent/SiteContent';
