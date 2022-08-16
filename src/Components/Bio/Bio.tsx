@@ -4,7 +4,7 @@ import image from './bioImage.jpg';
 
 const Bio: FC = () => {
     return(
-        <div className='bio'>        
+        <div className='bio' id='bio'>        
             <img src={image} className='float-right rounded-lg' id='bio-image'></img>
             <p className ='text-white font-sans'>
             I am a former violinist, aspiring front-end developer, and freelance sound designer from Northern California. 

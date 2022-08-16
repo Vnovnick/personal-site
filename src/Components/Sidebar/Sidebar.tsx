@@ -9,11 +9,10 @@ const Sidebar: FC = () => {
         fullNameResize();
     };
 
-    // const selectSection = (target: string): void => {
-    //     const section = document.getElementById(target) as HTMLFormElement;
-    //     section.classList.toggle('selected');     
-    // };
+    // handles nav scroll to element
+    const scrollTo = (target: string) => (document.getElementById(target) as HTMLFormElement).scrollIntoView();
 
+    // resizes name on window resize
     const fullNameResize = (): void => {
         let winWidth: number = window.innerWidth;
         if (winWidth < 1270){
@@ -22,7 +21,6 @@ const Sidebar: FC = () => {
             (document.getElementById('fullName') as HTMLFormElement).innerHTML = 'Nicholas Safonov';
         }
     };
-
     window.addEventListener('resize', () => {
         fullNameResize();
     })
@@ -30,10 +28,10 @@ const Sidebar: FC = () => {
     <div className="sidebar">
         <h3 id="fullName">Nicholas Safonov</h3>
         <ul className="nav flex-column">
-            <a className="nav-link" id='nav-bio' href="#">Bio</a>
+            <a className="nav-link" id='nav-bio' onClick={() => scrollTo('bio')} href="#">Bio</a>
             <a className="nav-link" id='nav-port' href="#">Portfolio</a>
-            <a className="nav-link" id='nav-perf' href="#">Performance Videos</a>
-            <a className="nav-link" id='nav-misc' href="#">Misc</a>
+            <a className="nav-link" id='nav-perf' onClick={() => scrollTo('performance-videos')} href="#">Performance Videos</a>
+            <a className="nav-link" id='nav-misc' href="#">Sound Design</a>
         </ul>
     </div>
   )
