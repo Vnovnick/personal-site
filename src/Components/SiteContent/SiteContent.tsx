@@ -3,6 +3,7 @@ import './SiteContent.scss';
 import Bio from '../Bio/Bio';
 import Portfolio from '../Portfolio/Portfolio';
 import PerformanceVideos from '../PerformanceVideos/PerformanceVideos';
+import SoundDesign from '../SoundDesign/SoundDesign';
 
 const SiteContent: FC = () => {
     return(
@@ -11,6 +12,7 @@ const SiteContent: FC = () => {
             <Bio/>
             <Portfolio/>
             <PerformanceVideos/>
+            <SoundDesign/>
         </div>
     );
 };
