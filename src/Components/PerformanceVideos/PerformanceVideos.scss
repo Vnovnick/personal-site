@@ -1,25 +1,28 @@
 .performance-videos{
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 55vh);
+    grid-template-rows: repeat(3, fit-content);
     gap: 1em;
     border: solid white 1px;
     margin-left: 15px;
     margin-right: 15px;
     .vid-1{
-        grid-row: 1; 
+        grid-row: 1;
+        grid-column: span 2;
     }
     .vid-2{
         grid-row: 2;
+        grid-column-start: 2;
+        grid-column-end: -1;       
     }
     .vid-3{
         grid-row: 3;
+        grid-column: span 2; 
     }
 }
 
 .embed-vid{
-    width: 47vw;
-    min-width: 375px;
+    // width: 43vw;
+    // min-width: 375px;
     height: auto;
     aspect-ratio: 16 / 9;
 }
