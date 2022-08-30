@@ -24,7 +24,7 @@ const Portfolio: FC = () => {
                         Once extracted, the application takes the user's 50 most recently played songs (50 being the maximum amount set by the API), checks to see if any of the song object played_at values fall within the time frames of the runs, and displays the corresponding song and run data together in one "post." 
                         The page displays the user's last 10 runs.
                     </p>
-                    <p>(See <a href="https://github.com/Vnovnick/run-tracker-ns" target='_blank'>link</a> for Gihub Repo and README)</p>
+                    <p>(See <a href="https://github.com/Vnovnick/run-tracker-ns" target='_blank'>link</a> for Github Repo)</p>
                 </div>
             </div>
         </div>
