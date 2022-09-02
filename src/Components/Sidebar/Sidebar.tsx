@@ -23,13 +23,21 @@ const Sidebar: FC = () => {
     };
     window.addEventListener('resize', () => {
         fullNameResize();
-    })
+    });
+    let observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting === true){
+            console.log('element has just become visible in screen');
+        }
+    }, {threshold: [1]})
+
+    const sections = document.querySelectorAll(".section");
+    observer.observe(sections[0]);
   return (
     <div className="sidebar">
         <h3 id="fullName">Nicholas Safonov</h3>
         <ul className="nav flex-column">
             <a className="nav-link" id='nav-bio' onClick={() => scrollTo('bio')} href="#">Bio</a>
-            <a className="nav-link" id='nav-port' href="#">Portfolio</a>
+            <a className="nav-link" id='nav-port' onClick={() => scrollTo('port')} href="#">Portfolio</a>
             <a className="nav-link" id='nav-perf' onClick={() => scrollTo('performance-videos')} href="#">Performance Videos</a>
             <a className="nav-link" id='nav-misc' href="#">Sound Design</a>
         </ul>
