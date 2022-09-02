@@ -3,7 +3,7 @@ import './PerformanceVideos.scss'
 
 const PerformanceVideos: FC = () => {
     return (
-        <div className="performance-videos section block lg:grid" id='performance-videos'>
+        <div className="performance-videos section block lg:grid" id='perf'>
             <div className="vid-1">
                 <iframe className='embed-vid w-full' src="https://www.youtube.com/embed/Z3sLFa3FkmI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>

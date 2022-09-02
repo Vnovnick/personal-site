@@ -10,7 +10,7 @@ const Sidebar: FC = () => {
     };
 
     // handles nav scroll to element
-    const scrollTo = (target: string) => (document.getElementById(target) as HTMLFormElement).scrollIntoView();
+    // const scrollTo = (target: string) => (document.getElementById(target) as HTMLFormElement).scrollIntoView();
 
     // resizes name on window resize
     const fullNameResize = (): void => {
@@ -24,21 +24,15 @@ const Sidebar: FC = () => {
     window.addEventListener('resize', () => {
         fullNameResize();
     });
-    let observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting === true){
-            console.log('element has just become visible in screen');
-        }
-    }, {threshold: [1]})
-
-    const sections = document.querySelectorAll(".section");
-    observer.observe(sections[0]);
+    // got online
+    
   return (
     <div className="sidebar">
         <h3 id="fullName">Nicholas Safonov</h3>
         <ul className="nav flex-column">
-            <a className="nav-link" id='nav-bio' onClick={() => scrollTo('bio')} href="#">Bio</a>
-            <a className="nav-link" id='nav-port' onClick={() => scrollTo('port')} href="#">Portfolio</a>
-            <a className="nav-link" id='nav-perf' onClick={() => scrollTo('performance-videos')} href="#">Performance Videos</a>
+            <a className="nav-link" id='nav-bio' href="#bio">Bio</a>
+            <a className="nav-link" id='nav-port' href="#port">Portfolio</a>
+            <a className="nav-link" id='nav-perf' href="#perf">Performance Videos</a>
             <a className="nav-link" id='nav-misc' href="#">Sound Design</a>
         </ul>
     </div>
