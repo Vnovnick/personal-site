@@ -7,7 +7,7 @@ export default function Bio() {
       <img
         src={image}
         alt="profile"
-        className="h-auto min-w-[200px] max-w-[25%] float-right mx-5"
+        className="h-auto min-w-[200px] max-w-[25%] float-right mx-5 rounded-lg"
         id="bio-image"
       />
       <p className="text-white font-sans ml-5 text-lg">
