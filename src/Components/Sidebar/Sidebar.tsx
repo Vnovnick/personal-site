@@ -2,6 +2,10 @@ import React from "react";
 import "./Sidebar.scss";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
+import AudioComponent from "./AudioComponent";
+
+const stellaris = require("../../tracks/FS_Mast_v2.wav");
+const calmLoop = require("../../tracks/freeSamplesLoop.wav");
 
 export default function Sidebar() {
   const location = useLocation();
@@ -29,17 +33,13 @@ export default function Sidebar() {
   });
   // got online
 
-  // const sidebarLinks = document.querySelectorAll(`[id$="link"]`);
-  // sidebarLinks.forEach((link) => {
-  //   link.addEventListener("click", (event) => {});
-  // });
-
   const navLinkFormatter = (link: string, linkName: string) => {
     return (
       <div
-        className={`w-full flex group hover:bg-gradient-to-r hover:from-black hover:via-green-900/50 hover:bg-[length:600px_100px] bg-right transition-[background] duration-100 ${
-          location.pathname === link &&
-          "bg-left bg-gradient-to-r from-black via-green-900/50 bg-[length:700px_100px]"
+        className={`w-full flex group  transition-[background] duration-100 ${
+          location.pathname === link
+            ? "bg-left bg-gradient-to-r from-black via-green-900/50 bg-[length:700px_100px]"
+            : "hover:bg-gradient-to-r hover:from-black hover:via-green-900/50 hover:bg-[length:600px_100px] bg-right"
         }`}
       >
         <p
@@ -55,9 +55,13 @@ export default function Sidebar() {
 
   return (
     <div className="bg-black flex flex-col h-screen">
-      <p className="text-white text-3xl mx-auto pt-5" id="fullName">
-        Nicholas Safonov
-      </p>
+      <div className="mx-auto">
+        <Link to="/bio" id="name">
+          <p className="text-white text-3xl pt-5" id="fullName">
+            Nicholas Safonov
+          </p>
+        </Link>
+      </div>
       <div className="flex flex-col text-green-400 text-lg h-1/5 justify-between mt-10 w-full">
         <Link to="/bio" id="bio-link">
           {navLinkFormatter("/bio", "Bio")}
@@ -71,6 +75,13 @@ export default function Sidebar() {
         <p className="hover:bg-green-900/50 pl-3" id="nav-misc">
           Sound Design
         </p>
+      </div>
+      <div className="my-auto">
+        <p className="text-white pl-3 text-lg font-bold mb-5">Music</p>
+        <div className="py-2 w-full h-44 overflow-auto flex flex-col">
+          <AudioComponent title="Sample Loop" src={calmLoop} />
+          <AudioComponent title="Ecumenopolis" src={stellaris} />
+        </div>
       </div>
     </div>
   );
