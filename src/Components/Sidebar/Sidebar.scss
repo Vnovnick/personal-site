@@ -1,21 +1,8 @@
-$background-color : rgba(0, 0, 0, 0.829);
-$font-color: rgb(122, 255, 162);
-
-.sidebar{
-    background-color: black !important;
-    // background-image: linear-gradient(to right, rgb(24, 24, 24), black);
-    border: white 1px solid;
-    height: 100%;
-    #fullName{
-        color: rgb(255, 255, 255);
-        text-align: center;
-        padding: 10px;
-    }
-    a{
-        color: $font-color !important;
-    }
-
+@keyframes link-animation {
+    0% {background-position: right;}
+    100% {background-position: left;}
 }
-.selected{
-    background-color: rgb(10, 31, 5) !important;
+
+.side-link:hover{
+    animation: link-animation 1s;
 }
