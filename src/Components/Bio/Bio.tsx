@@ -41,11 +41,6 @@ export default function Bio() {
         of live samples and a variety of plugins. <br></br>
         <br></br>
       </p>
-      <AudioPlayer
-        title="Sample Loop"
-        audioSrc={calmLoop}
-        image={calmLoopArt}
-      />
     </div>
   );
 }

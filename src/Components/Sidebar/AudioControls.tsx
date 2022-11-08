@@ -6,13 +6,13 @@ import toStartButton from "../../Assets/images/previous.png";
 interface AudioControlsProps {
   isPlaying: boolean;
   setIsPlaying: Dispatch<SetStateAction<boolean>>;
-  toStart: () => void;
+  onPrevClick: () => void;
 }
 
 export default function AudioControls({
   isPlaying,
   setIsPlaying,
-  toStart,
+  onPrevClick,
 }: AudioControlsProps) {
   return (
     <div className="grid grid-cols-3 w-2/3 mx-auto">
@@ -21,6 +21,7 @@ export default function AudioControls({
           src={toStartButton}
           alt="back-to-start-button"
           className="w-7 h-7"
+          onClick={onPrevClick}
         />
       </button>
       {isPlaying ? (

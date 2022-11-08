@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar/Sidebar";
 export default function PageContainer() {
   return (
     <div className="flex h-screen">
-      <div className="w-[17%]">
+      <div className="w-[20%]">
         <Sidebar />
       </div>
       <div className="w-full bg-black flex">

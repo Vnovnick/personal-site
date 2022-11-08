@@ -2,9 +2,9 @@ import React from "react";
 import "./Sidebar.scss";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
-import AudioComponent from "./AudioComponent";
 import AudioPlayer from "./AudioPlayer";
-import calmLoopArt from "../../trackArt/calmLoopArt.jpg";
+import calmLoopArt from "../../Assets/trackArt/calmLoopCropped.jpg";
+import ecumenopolis from "../../Assets/trackArt/ecumenopolis.webp";
 
 const stellaris = require("../../Assets/tracks/FS_Mast_v2.wav");
 const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
@@ -78,11 +78,19 @@ export default function Sidebar() {
           Sound Design
         </p>
       </div>
-      <div className="my-auto">
+      <div className="mt-8">
         <p className="text-white pl-3 text-lg font-bold mb-5">Music</p>
-        <div className="py-2 w-full h-44 overflow-auto flex flex-col">
-          <AudioComponent title="Sample Loop" src={calmLoop} />
-          <AudioComponent title="Ecumenopolis" src={stellaris} />
+        <div className="py-2 w-full overflow-auto flex flex-col gap-2">
+          <AudioPlayer
+            title="Loop for the Rain"
+            audioSrc={calmLoop}
+            image={calmLoopArt}
+          />
+          <AudioPlayer
+            title="Ecumenopolis"
+            audioSrc={stellaris}
+            image={ecumenopolis}
+          />
         </div>
       </div>
     </div>
