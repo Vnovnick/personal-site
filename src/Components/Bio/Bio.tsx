@@ -1,5 +1,9 @@
 import React from "react";
 import image from "./bioImage.jpg";
+import AudioPlayer from "../Sidebar/AudioPlayer";
+import calmLoopArt from "../../trackArt/calmLoopArt.jpg";
+
+const calmLoop = require("../../tracks/freeSamplesLoop.wav");
 
 export default function Bio() {
   return (
@@ -37,6 +41,11 @@ export default function Bio() {
         of live samples and a variety of plugins. <br></br>
         <br></br>
       </p>
+      <AudioPlayer
+        title="Sample Loop"
+        audioSrc={calmLoop}
+        image={calmLoopArt}
+      />
     </div>
   );
 }
