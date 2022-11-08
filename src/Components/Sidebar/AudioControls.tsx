@@ -15,18 +15,34 @@ export default function AudioControls({
   toStart,
 }: AudioControlsProps) {
   return (
-    <div className="flex">
+    <div className="grid grid-cols-3 w-2/3 mx-auto">
       <button type="button">
-        <img src={toStartButton} alt="back-to-start-button" />
+        <img
+          src={toStartButton}
+          alt="back-to-start-button"
+          className="w-7 h-7"
+        />
       </button>
       {isPlaying ? (
-        <button type="button" onClick={() => setIsPlaying(false)}>
-          <img src={pauseButton} alt="pause-button" className="w-9 h-9" />
-        </button>
+        <div className="p-1 flex">
+          <button
+            type="button"
+            onClick={() => setIsPlaying(false)}
+            className="m-auto"
+          >
+            <img src={pauseButton} alt="pause-button" className="w-9 h-9" />
+          </button>
+        </div>
       ) : (
-        <button type="button" onClick={() => setIsPlaying(true)}>
-          <img src={playButton} alt="play-button" className="w-9 h-9" />
-        </button>
+        <div className="p-1 flex">
+          <button
+            type="button"
+            onClick={() => setIsPlaying(true)}
+            className="m-auto"
+          >
+            <img src={playButton} alt="play-button" className="w-9 h-9" />
+          </button>
+        </div>
       )}
     </div>
   );
