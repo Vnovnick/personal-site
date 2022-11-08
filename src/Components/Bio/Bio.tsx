@@ -1,9 +1,9 @@
 import React from "react";
 import image from "./bioImage.jpg";
 import AudioPlayer from "../Sidebar/AudioPlayer";
-import calmLoopArt from "../../trackArt/calmLoopArt.jpg";
+import calmLoopArt from "../../Assets/trackArt/calmLoopArt.jpg";
 
-const calmLoop = require("../../tracks/freeSamplesLoop.wav");
+const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
 
 export default function Bio() {
   return (

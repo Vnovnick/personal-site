@@ -24,6 +24,21 @@ export default function AudioPlayer({
     console.log("TODO go to prev");
   };
 
+  useEffect(() => {
+    if (isPlaying) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
+  }, [isPlaying]);
+
+  useEffect(() => {
+    return () => {
+      audioRef.current.pause();
+      clearInterval(intervalRef.current);
+    };
+  }, []);
+
   const { duration } = audioRef.current;
 
   return (

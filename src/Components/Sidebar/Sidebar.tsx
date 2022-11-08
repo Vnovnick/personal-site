@@ -6,8 +6,8 @@ import AudioComponent from "./AudioComponent";
 import AudioPlayer from "./AudioPlayer";
 import calmLoopArt from "../../trackArt/calmLoopArt.jpg";
 
-const stellaris = require("../../tracks/FS_Mast_v2.wav");
-const calmLoop = require("../../tracks/freeSamplesLoop.wav");
+const stellaris = require("../../Assets/tracks/FS_Mast_v2.wav");
+const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
 
 export default function Sidebar() {
   const location = useLocation();
