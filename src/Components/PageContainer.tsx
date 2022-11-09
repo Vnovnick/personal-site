@@ -8,7 +8,7 @@ export default function PageContainer() {
       <div className="w-[20%]">
         <Sidebar />
       </div>
-      <div className="w-full bg-black flex">
+      <div className="w-full overflow-auto bg-black flex">
         <Outlet />
       </div>
     </div>

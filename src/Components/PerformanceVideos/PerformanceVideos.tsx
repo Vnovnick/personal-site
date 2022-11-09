@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 
-const PerformanceVideos: FC = () => {
+export default function PerformanceVideos() {
   return (
     <div
-      className="performance-videos h-full w-full section lg:flex lg:flex-col"
+      className="performance-videos h-fit w-full section lg:flex lg:flex-col overflow-auto"
       id="perf"
     >
-      <div className="flex h-[423px] border">
+      <div className="flex h-[423px]">
         <iframe
           className="embed-vid w-[750px]"
           src="https://www.youtube.com/embed/Z3sLFa3FkmI"
@@ -16,18 +16,18 @@ const PerformanceVideos: FC = () => {
         <p className="text-white">Bach Sonata No. 2 in A minor - Grave</p>
       </div>
 
-      <div className="vid-2 flex">
+      <div className="flex h-[423px]">
         <iframe
-          className="embed-vid w-2/5"
+          className="embed-vid w-[750px]"
           src="https://www.youtube.com/embed/vPrTJeND3-k"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         ></iframe>
         <p className="text-white">Ysaye Sonata No. 3 "Ballade"</p>
       </div>
-      <div className="vid-3 flex">
+      <div className="flex h-[423px]">
         <iframe
-          className="embed-vid w-2/5"
+          className="embed-vid w-[750px]"
           src="https://www.youtube.com/embed/qP12tqO3ZdM"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -36,6 +36,4 @@ const PerformanceVideos: FC = () => {
       </div>
     </div>
   );
-};
-
-export default PerformanceVideos;
+}
