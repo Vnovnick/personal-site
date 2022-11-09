@@ -82,7 +82,7 @@ export default function Sidebar() {
         <p className="text-white pl-3 text-lg font-bold mb-5">Music</p>
         <div className="py-2 w-full overflow-auto flex flex-col gap-2">
           <AudioPlayer
-            title="Loop for the Rain"
+            title="Rain Loop"
             audioSrc={calmLoop}
             image={calmLoopArt}
           />
