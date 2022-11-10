@@ -6,12 +6,14 @@ interface PerfVideoCompProps {
   left?: boolean;
   right?: boolean;
   divClassName?: string;
+  id?: string;
 }
 
 const defaultProps = {
   left: false,
   right: false,
   divClassName: "",
+  id: "",
 };
 
 export default function PerfVideoComp({
@@ -20,9 +22,10 @@ export default function PerfVideoComp({
   left,
   right,
   divClassName,
+  id,
 }: PerfVideoCompProps) {
   return (
-    <div className={`flex h-[450px] my-3 mr-2 ${divClassName}`}>
+    <div id={id} className={`flex h-[450px] my-3 mr-2 ${divClassName}`}>
       {left && (
         <>
           <iframe
