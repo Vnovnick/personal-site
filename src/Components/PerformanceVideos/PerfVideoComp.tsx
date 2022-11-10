@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
 interface PerfVideoCompProps {
   src: string;
-  description: string;
+  description: ReactElement | JSX.Element;
   left?: boolean;
   right?: boolean;
   divClassName?: string;
@@ -34,12 +34,12 @@ export default function PerfVideoComp({
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           ></iframe>
-          <p className="text-white m-auto text-2xl">{description}</p>
+          {description}
         </>
       )}
       {right && (
         <>
-          <p className="text-white m-auto text-2xl">{description}</p>
+          {description}
           <iframe
             className="embed-vid w-1/2"
             src={src}

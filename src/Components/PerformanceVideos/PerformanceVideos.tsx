@@ -12,11 +12,21 @@ export default function PerformanceVideos() {
   return (
     <div className="h-fit w-full flex" id="perf">
       <div className="w-[5%] text-white text-center text-2xl timeline-grid">
-        <p className="row-start-1 place-self-center">2019</p>
-        <p className="row-start-3 place-self-center">2018</p>
+        <p className="row-start-1 place-self-center">2022</p>
+        <p className="row-start-2 place-self-center">2019</p>
+        <p className="row-start-4 place-self-center">2018</p>
+        <p className="row-start-5 place-self-center">2017</p>
       </div>
       <div className="w-[95%] lg:flex lg:flex-col">
         <div className="flex text-white bg-black text-lg py-2 pl-10 sticky top-0">
+          <button
+            type="button"
+            className="hover:text-green-100"
+            onClick={() => scrollTo("first-2022-vid")}
+          >
+            2022
+          </button>
+          <div className="w-1 h-1 bg-white rounded-full my-auto mx-5" />
           <button
             type="button"
             className="hover:text-green-100"
@@ -32,23 +42,63 @@ export default function PerformanceVideos() {
           >
             2018
           </button>
+          <div className="w-1 h-1 bg-white rounded-full my-auto mx-5" />
+          <button
+            type="button"
+            className="hover:text-green-100"
+            onClick={() => scrollTo("first-2017-vid")}
+          >
+            2017
+          </button>
         </div>
+        <PerfVideoComp
+          id="first-2022-vid"
+          src="https://www.youtube.com/embed/JaF5JwZJy48"
+          description={
+            <p className="text-white m-auto text-2xl">
+              Schubert Piano Trio in E flat major No. 2, Op.100
+            </p>
+          }
+          right
+        />
         <PerfVideoComp
           id="first-2019-vid"
           src="https://www.youtube.com/embed/Z3sLFa3FkmI"
-          description="Bach Sonata No. 2 in A minor - Grave"
+          description={
+            <p className="text-white m-auto text-2xl">
+              Bach Sonata No. 2 in A minor - Grave
+            </p>
+          }
           left
         />
         <PerfVideoComp
           src="https://www.youtube.com/embed/vPrTJeND3-k"
-          description='Ysaye Sonata No. 3 "Ballade"'
+          description={
+            <p className="text-white m-auto text-2xl">
+              Ysaye Sonata No. 3 &apos;Ballade&apos;
+            </p>
+          }
           right
         />
         <PerfVideoComp
           id="first-2018-vid"
           src="https://www.youtube.com/embed/qP12tqO3ZdM"
-          description="Bach Partita No. 2 in D minor - Chaconne"
+          description={
+            <p className="text-white m-auto text-2xl">
+              Bach Partita No. 2 in D minor - Chaconne
+            </p>
+          }
           left
+        />
+        <PerfVideoComp
+          id="first-2017-vid"
+          src="https://www.youtube.com/embed/0jftN00EoSA"
+          description={
+            <p className="text-white m-auto text-2xl">
+              Sibelius Violin Concerto
+            </p>
+          }
+          right
         />
       </div>
     </div>
