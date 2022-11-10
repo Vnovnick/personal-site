@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import ScrollDiv from "../uiComponents/ScrollDiv";
 import Sidebar from "./Sidebar/Sidebar";
 
 export default function PageContainer() {
@@ -8,9 +9,9 @@ export default function PageContainer() {
       <div className="w-[20%]">
         <Sidebar />
       </div>
-      <div className="w-full overflow-auto bg-black flex">
+      <ScrollDiv className="w-full overflow-auto bg-black flex">
         <Outlet />
-      </div>
+      </ScrollDiv>
     </div>
   );
 }
