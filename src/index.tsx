@@ -6,6 +6,7 @@ import Bio from "./Components/Bio/Bio";
 import PageContainer from "./Components/PageContainer";
 import PerformanceVideos from "./Components/PerformanceVideos/PerformanceVideos";
 import Portfolio from "./Components/Portfolio/Portfolio";
+import SoundDesign from "./Components/SoundDesign/SoundDesign";
 import Home from "./Home";
 
 const root = ReactDOM.createRoot(
@@ -20,6 +21,7 @@ root.render(
           <Route path="/bio" element={<Bio />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/performance-videos" element={<PerformanceVideos />} />
+          <Route path="/sound-design" element={<SoundDesign />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -76,9 +76,9 @@ export default function Sidebar() {
         <Link to="/performance-videos" id="perf-videos-link">
           {navLinkFormatter("/performance-videos", "Performance Videos")}
         </Link>
-        <p className="hover:bg-green-900/50 pl-3" id="nav-misc">
-          Sound Design
-        </p>
+        <Link to="/sound-design" id="sound-design-link">
+          {navLinkFormatter("/sound-design", "Sound Design")}
+        </Link>
       </div>
       <div className="mt-8">
         <p className="text-white pl-3 text-lg font-bold mb-5">Music</p>
