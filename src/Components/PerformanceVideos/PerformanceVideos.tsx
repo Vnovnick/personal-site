@@ -4,7 +4,7 @@ import "./PerformanceVideos.scss";
 
 const scrollTo = (target: string) =>
   (document.getElementById(target) as HTMLFormElement).scrollIntoView({
-    block: "end",
+    block: "start",
     behavior: "smooth",
   });
 
@@ -14,8 +14,8 @@ export default function PerformanceVideos() {
       <div className="w-[5%] text-white text-center text-2xl timeline-grid">
         <p className="row-start-1 place-self-center">2022</p>
         <p className="row-start-2 place-self-center">2019</p>
-        <p className="row-start-4 place-self-center">2018</p>
-        <p className="row-start-5 place-self-center">2017</p>
+        <p className="row-start-5 place-self-center">2018</p>
+        <p className="row-start-6 place-self-center">2017</p>
       </div>
       <div className="w-[95%] lg:flex lg:flex-col">
         <div className="flex text-white bg-black text-lg py-2 pl-10 sticky top-0">
@@ -81,6 +81,18 @@ export default function PerformanceVideos() {
           right
         />
         <PerfVideoComp
+          src="https://www.youtube.com/embed/vxzJjWYAz2U?start=596"
+          description={
+            <div className="text-white m-auto text-2xl text-center">
+              <p>String Quartet No. 5 in A major, Op. 18, No. 5</p>
+              <p>I. Allegro (9:56)</p>
+              <p>II. Minuet (15:10)</p>
+              <p>III. Andante cantabile con variazioni</p>
+            </div>
+          }
+          left
+        />
+        <PerfVideoComp
           id="first-2018-vid"
           src="https://www.youtube.com/embed/qP12tqO3ZdM"
           description={
@@ -88,7 +100,7 @@ export default function PerformanceVideos() {
               Bach Partita No. 2 in D minor - Chaconne
             </p>
           }
-          left
+          right
         />
         <PerfVideoComp
           id="first-2017-vid"
@@ -98,7 +110,7 @@ export default function PerformanceVideos() {
               Sibelius Violin Concerto
             </p>
           }
-          right
+          left
         />
       </div>
     </div>

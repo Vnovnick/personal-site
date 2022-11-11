@@ -38,15 +38,17 @@ export default function Sidebar() {
   const navLinkFormatter = (link: string, linkName: string) => {
     return (
       <div
-        className={`w-full flex group  transition-[background] duration-100 ${
+        className={`w-full flex group transition-[background] duration-100 ${
           location.pathname === link
             ? "bg-left bg-gradient-to-r from-black via-green-900/50 bg-[length:700px_100px]"
             : "hover:bg-gradient-to-r hover:from-black hover:via-green-900/50 hover:bg-[length:600px_100px] bg-right"
         }`}
       >
         <p
-          className={`pl-3 transition-all w-fit ${
-            location.pathname === link ? "pl-10" : "group-hover:tracking-wide"
+          className={`transition-all w-fit ${
+            location.pathname === link
+              ? "pl-10"
+              : "pl-3 group-hover:tracking-wide"
           }`}
         >
           {linkName}
