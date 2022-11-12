@@ -14,8 +14,8 @@ export default function PerformanceVideos() {
       <div className="w-[5%] text-white text-center text-2xl timeline-grid">
         <p className="row-start-1 place-self-center">2022</p>
         <p className="row-start-2 place-self-center">2019</p>
-        <p className="row-start-5 place-self-center">2018</p>
-        <p className="row-start-6 place-self-center">2017</p>
+        <p className="row-start-6 place-self-center">2018</p>
+        <p className="row-start-7 place-self-center">2017</p>
       </div>
       <div className="w-[95%] lg:flex lg:flex-col">
         <div className="flex text-white bg-black text-lg py-2 pl-10 sticky top-0">
@@ -55,30 +55,41 @@ export default function PerformanceVideos() {
           id="first-2022-vid"
           src="https://www.youtube.com/embed/JaF5JwZJy48"
           description={
-            <p className="text-white m-auto text-2xl">
-              Schubert Piano Trio in E flat major No. 2, Op.100
-            </p>
+            <div className="text-white m-auto text-2xl text-center">
+              <p>Schubert Piano Trio in E flat major No. 2, Op.100</p>
+              <p>II. Andante con moto</p>
+            </div>
           }
           right
         />
         <PerfVideoComp
           id="first-2019-vid"
-          src="https://www.youtube.com/embed/Z3sLFa3FkmI"
+          src="https://www.youtube.com/embed/vPrTJeND3-k"
           description={
             <p className="text-white m-auto text-2xl">
-              Bach Sonata No. 2 in A minor - Grave
+              Ysaye Sonata No. 3 &quot;Ballade&quot;
             </p>
           }
           left
         />
         <PerfVideoComp
-          src="https://www.youtube.com/embed/vPrTJeND3-k"
+          src="https://www.youtube.com/embed/Z3sLFa3FkmI"
           description={
-            <p className="text-white m-auto text-2xl">
-              Ysaye Sonata No. 3 &apos;Ballade&apos;
-            </p>
+            <div className="text-white m-auto text-2xl text-center">
+              <p>Bach Sonata No. 2 in A minor</p>
+              <p>Grave</p>
+            </div>
           }
           right
+        />
+        <PerfVideoComp
+          src="https://www.youtube.com/embed/7yx9MddaXPQ"
+          description={
+            <p className="text-white m-auto text-2xl">
+              Paganini Caprice No. 10
+            </p>
+          }
+          left
         />
         <PerfVideoComp
           src="https://www.youtube.com/embed/vxzJjWYAz2U?start=596"
@@ -87,30 +98,34 @@ export default function PerformanceVideos() {
               <p>String Quartet No. 5 in A major, Op. 18, No. 5</p>
               <p>I. Allegro (9:56)</p>
               <p>II. Minuet (15:10)</p>
-              <p>III. Andante cantabile con variazioni</p>
+              <p>III. Andante cantabile con variazioni (20:08)</p>
             </div>
           }
-          left
+          right
         />
         <PerfVideoComp
           id="first-2018-vid"
           src="https://www.youtube.com/embed/qP12tqO3ZdM"
           description={
-            <p className="text-white m-auto text-2xl">
-              Bach Partita No. 2 in D minor - Chaconne
-            </p>
+            <div className="text-white m-auto text-2xl text-center">
+              <p>Bach Partita No. 2 in D minor</p>
+              <p>Chaconne</p>
+            </div>
           }
-          right
+          left
         />
         <PerfVideoComp
           id="first-2017-vid"
           src="https://www.youtube.com/embed/0jftN00EoSA"
           description={
-            <p className="text-white m-auto text-2xl">
-              Sibelius Violin Concerto
-            </p>
+            <div className="text-white m-auto text-2xl text-center">
+              <p>Sibelius Violin Concerto</p>
+              <p>I. Allegro moderato (0:00)</p>
+              <p>II. Adagio di molto (11:50)</p>
+              <p>III. Allegro, ma non tanto (18:37)</p>
+            </div>
           }
-          left
+          right
         />
       </div>
     </div>
