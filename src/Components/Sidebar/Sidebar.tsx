@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import AudioPlayer from "./AudioPlayer";
 import calmLoopArt from "../../Assets/trackArt/calmLoopCropped.jpg";
 import ecumenopolis from "../../Assets/trackArt/ecumenopolis.webp";
+import gitHubImage from "../../Assets/images/gitHubWhiteLogo.png";
+import linkedIn from "../../Assets/images/linkedIn.png";
 
 const stellaris = require("../../Assets/tracks/FS_Mast_v2.wav");
 const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
@@ -59,12 +61,38 @@ export default function Sidebar() {
 
   return (
     <div className="bg-black flex flex-col h-screen">
-      <div className="mx-auto">
+      <div className="mx-auto flex flex-col">
         <Link to="/bio" id="name">
           <p className="text-white text-3xl pt-5" id="fullName">
             Nicholas Safonov
           </p>
         </Link>
+        <div className="flex mx-auto">
+          <a
+            href="https://github.com/Vnovnick"
+            className="grid place-items-center group"
+            target="_blank"
+          >
+            <div className="rounded-full w-10 h-10 group-hover:bg-green-900/50 col-start-1 row-start-1" />
+            <img
+              src={gitHubImage}
+              alt="gitHub"
+              className="w-14 col-start-1 row-start-1"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nicholas-safonov/"
+            className="grid place-items-center group"
+            target="_blank"
+          >
+            <div className="rounded-full w-10 h-10 group-hover:bg-green-900/50 col-start-1 row-start-1" />
+            <img
+              src={linkedIn}
+              alt="gitHub"
+              className="w-6 col-start-1 row-start-1"
+            />
+          </a>
+        </div>
       </div>
       <div className="flex flex-col text-green-400 text-lg h-1/5 justify-between mt-10 w-full">
         <Link to="/bio" id="bio-link">
