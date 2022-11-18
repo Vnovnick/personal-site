@@ -28,10 +28,10 @@ export default function Bio() {
         attended festivals such as the NAC Zukerman Young Artists&apos; Program
         and Keshet Eilon. I have also served as a substitute violinist for
         multiple orchestras in Indiana. I have studied with Grigory Kalinovsky
-        at the Jacobs&apos; School of Music and am studying under Julia Bushkova
-        at UNT. I have briefly studied with or been coached by Pinchas Zukerman,
-        Rosa Fain, Phillip Setzer, Nicholas Mann, and many others. Additionally,
-        I have had master classes with the Dover Quartet and Seth Knopp.
+        at the Jacobs&apos; School of Music and with Julia Bushkova at UNT. I
+        have briefly studied with or been coached by Pinchas Zukerman, Rosa
+        Fain, Phillip Setzer, Nicholas Mann, and many others. Additionally, I
+        have had master classes with the Dover Quartet and Seth Knopp.
         <br></br>
         <br></br>I also have experience working on a variety of different sound
         design projects in ProTools. These range from small scale linear
