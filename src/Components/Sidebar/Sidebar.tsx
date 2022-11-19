@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Sidebar.scss";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
@@ -12,6 +12,7 @@ const stellaris = require("../../Assets/tracks/FS_Mast_v2.wav");
 const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
 
 export default function Sidebar() {
+  const [showPlayer, setShowPlayer] = useState(true);
   const location = useLocation();
 
   window.onload = () => {
@@ -109,19 +110,32 @@ export default function Sidebar() {
         </Link>
       </div>
       <div className="mt-8">
-        <p className="text-white pl-3 text-lg font-bold mb-5">Music</p>
-        <div className="py-2 w-full overflow-auto flex flex-col gap-2">
-          <AudioPlayer
-            title="Rain Loop"
-            audioSrc={calmLoop}
-            image={calmLoopArt}
-          />
-          <AudioPlayer
-            title="Ecumenopolis"
-            audioSrc={stellaris}
-            image={ecumenopolis}
-          />
-        </div>
+        <button
+          type="button"
+          className="flex mb-5"
+          onClick={() => setShowPlayer(!showPlayer)}
+        >
+          <p className="text-white pl-3 text-lg font-bold">Music Player</p>
+          {showPlayer ? (
+            <div className="w-0 h-0 border-x-8 border-x-transparent border-b-8 border-b-white my-auto mx-3" />
+          ) : (
+            <div className="w-0 h-0 border-x-8 border-x-transparent border-t-8 border-t-white my-auto mx-3" />
+          )}
+        </button>
+        {showPlayer && (
+          <div className="py-2 w-full overflow-auto flex flex-col gap-2">
+            <AudioPlayer
+              title="Rain Loop"
+              audioSrc={calmLoop}
+              image={calmLoopArt}
+            />
+            <AudioPlayer
+              title="Ecumenopolis"
+              audioSrc={stellaris}
+              image={ecumenopolis}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

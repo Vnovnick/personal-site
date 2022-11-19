@@ -5,7 +5,7 @@ import proppex from "../../Assets/images/Proppex.jpg";
 
 export default function Portfolio() {
   return (
-    <div className="flex flex-col gap-10 py-10">
+    <div className="flex flex-col gap-10 my-auto">
       <div className="flex w-full gap-5" id="port">
         <div className="w-1/2 h-[300px] flex">
           <img
