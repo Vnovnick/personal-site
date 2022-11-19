@@ -21,7 +21,7 @@ export default function PerformanceVideos() {
         <div className="flex text-white bg-black text-lg py-2 pl-10 sticky top-0">
           <button
             type="button"
-            className="hover:text-green-100"
+            className="hover:text-green-300"
             onClick={() => scrollTo("first-2022-vid")}
           >
             2022
@@ -29,7 +29,7 @@ export default function PerformanceVideos() {
           <div className="w-1 h-1 bg-white rounded-full my-auto mx-5" />
           <button
             type="button"
-            className="hover:text-green-100"
+            className="hover:text-green-300"
             onClick={() => scrollTo("first-2019-vid")}
           >
             2019
@@ -37,7 +37,7 @@ export default function PerformanceVideos() {
           <div className="w-1 h-1 bg-white rounded-full my-auto mx-5" />
           <button
             type="button"
-            className="hover:text-green-100"
+            className="hover:text-green-300"
             onClick={() => scrollTo("first-2018-vid")}
           >
             2018
@@ -45,7 +45,7 @@ export default function PerformanceVideos() {
           <div className="w-1 h-1 bg-white rounded-full my-auto mx-5" />
           <button
             type="button"
-            className="hover:text-green-100"
+            className="hover:text-green-300"
             onClick={() => scrollTo("first-2017-vid")}
           >
             2017
