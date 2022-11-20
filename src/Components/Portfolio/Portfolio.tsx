@@ -9,11 +9,22 @@ export default function Portfolio() {
       <div className="flex w-full gap-5" id="port">
         <div className="w-1/2 h-[300px] flex"></div>
         <div className="w-1/2 p-4">
-          <div className="flex text-white items-center mb-3">
-            <p className="mr-2 text-3xl">Personal Site</p>
-          </div>
+          <p className="text-3xl text-white mb-3">Personal Site</p>
           <p className="text-white text-lg">
-            This site was created with React, Tailwind, and Typescript.
+            This site was created with React, Tailwind, Typescript, and is
+            hosted on GitHub Pages.
+          </p>
+          <p className="text-white text-lg">
+            (See{" "}
+            <a
+              href="https://github.com/Vnovnick/personal-site"
+              target="_blank"
+              rel="noreferrer"
+              className="text-green-200/80 hover:text-green-300"
+            >
+              link
+            </a>{" "}
+            for the full Github repository and README file)
           </p>
         </div>
       </div>
@@ -22,13 +33,14 @@ export default function Portfolio() {
           <img
             src={proppex}
             alt="proppex-logo"
-            className="mx-auto rounded-xl"
+            className="mx-auto rounded-xl h-[250px]"
           />
         </div>
         <div className="w-1/2 p-4">
-          <div className="flex text-white items-center mb-3">
-            <p className="mr-2 text-3xl">Proppex - Frontend Developer Intern</p>
-          </div>
+          <p className="text-3xl text-white">
+            Proppex - Frontend Developer Intern
+          </p>
+          <p className="text-white mb-3 text-lg"> (September 2022 - Present)</p>
           <p className="text-white text-lg">
             As a Frontend Developer Intern at Proppex, I work to create UI
             elements and replicate designs created by our designer. For my role,
@@ -38,7 +50,7 @@ export default function Portfolio() {
       </div>
       <div className="flex w-full  mx-auto gap-5" id="port">
         <div className="w-1/2">
-          <video autoPlay muted loop className="rounded-xl">
+          <video autoPlay muted loop className="rounded-xl w-4/5 mx-auto">
             <source src={runvid} type="video/mp4"></source>
           </video>
         </div>

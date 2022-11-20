@@ -12,7 +12,7 @@ const stellaris = require("../../Assets/tracks/FS_Mast_v2.wav");
 const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
 
 export default function Sidebar() {
-  const [showPlayer, setShowPlayer] = useState(true);
+  const [showPlayer, setShowPlayer] = useState(false);
   const location = useLocation();
 
   window.onload = () => {
@@ -61,7 +61,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="bg-black flex flex-col h-screen">
+    <div className="bg-black flex flex-col h-fit sm:h-screen">
       <div className="mx-auto flex flex-col">
         <Link to="/bio" id="name">
           <p className="text-white text-3xl pt-5" id="fullName">
@@ -109,7 +109,7 @@ export default function Sidebar() {
           {navLinkFormatter("/sound-design", "Sound Design")}
         </Link>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 hidden sm:block">
         <button
           type="button"
           className="flex mb-5"
