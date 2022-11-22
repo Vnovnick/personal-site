@@ -1,33 +1,10 @@
 import React from "react";
 import runvid from "./RunTracker.mp4";
-import chainLink from "./chainLink.png";
 import proppex from "../../Assets/images/Proppex.jpg";
 
 export default function Portfolio() {
   return (
-    <div className="flex flex-col gap-10 ">
-      <div className="flex w-full gap-5" id="port">
-        <div className="w-1/2 h-[300px] flex"></div>
-        <div className="w-1/2 p-4">
-          <p className="text-3xl text-white mb-3">Personal Site</p>
-          <p className="text-white text-lg">
-            This site was created with React, Tailwind, Typescript, and is
-            hosted on GitHub Pages.
-          </p>
-          <p className="text-white text-lg">
-            (See{" "}
-            <a
-              href="https://github.com/Vnovnick/personal-site"
-              target="_blank"
-              rel="noreferrer"
-              className="text-green-200/80 hover:text-green-300"
-            >
-              link
-            </a>{" "}
-            for the full Github repository and README file)
-          </p>
-        </div>
-      </div>
+    <div className="flex flex-col gap-10 my-auto mx-10">
       <div className="flex w-full gap-5" id="port">
         <div className="w-1/2 h-[300px] flex">
           <img
@@ -57,19 +34,6 @@ export default function Portfolio() {
         <div className="w-1/2 p-4">
           <div className="flex text-white items-center mb-3">
             <p className="mr-2 text-3xl">Run Tracker</p>
-            {/* <a
-            href="https://vnovnick.github.io/run-tracker-ns/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="chain-link"
-              src={chainLink}
-              alt="link"
-              width="17px"
-              height="17px"
-            />
-          </a> */}
           </div>
           <div className="details">
             {/* <p className="text-white text-lg">

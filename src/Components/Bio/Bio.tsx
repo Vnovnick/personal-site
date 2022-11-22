@@ -2,8 +2,6 @@ import React from "react";
 import image from "./bioImage.jpg";
 import { Link } from "react-router-dom";
 
-const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
-
 export default function Bio() {
   return (
     <div className="block mx-[15px] h-5/6 my-auto" id="bio">
