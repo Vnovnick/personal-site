@@ -63,7 +63,7 @@ export default function Sidebar() {
   return (
     <div className="bg-black flex flex-col h-fit sm:h-screen">
       <div className="mx-auto flex flex-col">
-        <Link to="/bio" id="name">
+        <Link to="/about-me" id="name">
           <p className="text-white text-3xl pt-5" id="fullName">
             Nicholas Safonov
           </p>
