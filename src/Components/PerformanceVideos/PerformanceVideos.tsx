@@ -63,22 +63,22 @@ export default function PerformanceVideos() {
           right
         />
         <PerfVideoComp
-          id="first-2019-vid"
-          src="https://www.youtube.com/embed/vPrTJeND3-k"
-          description={
-            <p className="text-white m-auto text-2xl">
-              Ysaye Sonata No. 3 &quot;Ballade&quot;
-            </p>
-          }
-          left
-        />
-        <PerfVideoComp
           src="https://www.youtube.com/embed/Z3sLFa3FkmI"
           description={
             <div className="text-white m-auto text-2xl text-center">
               <p>Bach Sonata No. 2 in A minor</p>
               <p>Grave</p>
             </div>
+          }
+          left
+        />
+        <PerfVideoComp
+          id="first-2019-vid"
+          src="https://www.youtube.com/embed/vPrTJeND3-k"
+          description={
+            <p className="text-white m-auto text-2xl">
+              Ysaye Sonata No. 3 &quot;Ballade&quot;
+            </p>
           }
           right
         />

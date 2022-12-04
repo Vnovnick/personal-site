@@ -95,7 +95,7 @@ export default function Sidebar() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col text-green-400 text-lg h-1/5 justify-between mt-10 w-full">
+      <div className="flex flex-col text-green-400 text-lg h-1/4 justify-between mt-10 w-full">
         <Link to="/about-me" id="about-me-link">
           {navLinkFormatter("/about-me", "About Me")}
         </Link>
@@ -105,12 +105,12 @@ export default function Sidebar() {
         <Link to="/performance-videos" id="perf-videos-link">
           {navLinkFormatter("/performance-videos", "Performance Videos")}
         </Link>
+        <Link to="/sound-design" id="sound-design-link">
+          {navLinkFormatter("/sound-design", "Sound Design/Music")}
+        </Link>
         <Link to="/contact" id="contact-link">
           {navLinkFormatter("/contact", "Contact")}
         </Link>
-        {/* <Link to="/sound-design" id="sound-design-link">
-          {navLinkFormatter("/sound-design", "Sound Design/Music")}
-        </Link> */}
       </div>
       <div className="mt-8 hidden sm:block">
         <button

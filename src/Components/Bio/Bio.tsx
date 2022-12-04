@@ -12,9 +12,9 @@ export default function Bio() {
         id="bio-image"
       />
       <p className="text-white font-sans ml-5 text-lg">
-        I am a Frontend Developer Intern at Proppex and former violinist from
+        I am a Frontend Development Intern at Proppex and former violinist from
         Northern California. As a{" "}
-        <Link to="/portfolio" id="portfolio-link">
+        <Link to="/work" id="work-link">
           <span className="text-green-200 hover:text-green-300">
             Frontend Developer
           </span>
