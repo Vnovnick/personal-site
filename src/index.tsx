@@ -9,7 +9,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import SoundDesign from "./Components/SoundDesign/SoundDesign";
 import Contact from "./Components/Contact/Contact";
 
-// build still not working??
+// still not sure why its not working
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
