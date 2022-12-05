@@ -1,8 +1,0 @@
-@keyframes link-animation {
-    0% {background-position: right;}
-    100% {background-position: left;}
-}
-
-.side-link:hover{
-    animation: link-animation 1s;
-}
