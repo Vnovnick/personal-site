@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate, HashRouter } from "react-router-dom";
 import "./Assets/main.css";
 import Bio from "./Components/Bio/Bio";
 import PageContainer from "./Components/PageContainer";
@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<PageContainer />}>
           <Route path="/" element={<Navigate to="/about-me" />} />
@@ -26,6 +26,6 @@ root.render(
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
