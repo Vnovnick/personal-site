@@ -20,8 +20,11 @@ export default function Portfolio() {
           <p className="text-white mb-3 text-lg"> (September 2022 - Present)</p>
           <p className="text-white text-lg">
             As a Frontend Developer Intern at Proppex, I work to create UI
-            elements and replicate designs created by our designer. For my role,
-            I use React, Tailwind, Jest, Git, JSX, TypeScript, and JavaScript.
+            elements and replicate designs created by our designer. I also am
+            often tasked with overseeing development processes such as backlog
+            prep, ticket creation, and peer mentoring, reporting directly to the
+            CTO. For my role, I use React, Tailwind, Jest, Git, JSX, TypeScript,
+            and JavaScript.
           </p>
         </div>
       </div>

@@ -63,6 +63,7 @@ export default function PerformanceVideos() {
           right
         />
         <PerfVideoComp
+          id="first-2019-vid"
           src="https://www.youtube.com/embed/Z3sLFa3FkmI"
           description={
             <div className="text-white m-auto text-2xl text-center">
@@ -73,7 +74,6 @@ export default function PerformanceVideos() {
           left
         />
         <PerfVideoComp
-          id="first-2019-vid"
           src="https://www.youtube.com/embed/vPrTJeND3-k"
           description={
             <p className="text-white m-auto text-2xl">
