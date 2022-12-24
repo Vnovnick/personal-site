@@ -44,7 +44,7 @@ export default function Contact() {
         </div>
         <a
           className="text-green-200 hover:text-green-300 text-xl"
-          href="https://drive.google.com/file/d/1xX4rohBmPO7kPZMID3ien4lH_tueDgG1/view?usp=sharing"
+          href="https://drive.google.com/file/d/1TeD28kkEYqRii4MuZkhA1SCO634hWmSd/view?usp=sharing"
           target="_blank"
         >
           Resume
