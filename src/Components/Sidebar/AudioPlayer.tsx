@@ -82,7 +82,7 @@ export default function AudioPlayer({
 
   return (
     <div
-      className={`w-[30vw] h-[30vw] sm:w-[17vw] sm:h-[17vw] lg:w-[12vw] lg:h-[12vw] flex rounded-lg bg-gradient-to-t from-green-900/30 to-green-700 transition-[background] duration-500 bg-[length:100px_400px] ${
+      className={`w-[30vw] h-[30vw] mb-[5%] sm:w-[17vw] sm:h-[17vw] lg:w-[12vw] lg:h-[12vw] flex rounded-lg bg-gradient-to-t from-green-900/30 to-green-700 transition-[background] duration-500 bg-[length:100px_400px] ${
         isPlaying && "bg-right"
       }`}
     >
@@ -112,7 +112,7 @@ export default function AudioPlayer({
           step="1"
           min="0"
           max={duration ? duration : `${duration}`}
-          className="h-[4%] w-[90%] mb-3 rounded-sm bg-green-200 appearance-none transition-[background] duration-200 cursor-pointer mx-auto"
+          className="h-1 w-[90%] mb-3 rounded-sm bg-green-200 appearance-none transition-[background] duration-200 cursor-pointer mx-auto"
           onChange={(e) => onScrub(e.target.value)}
           onMouseUp={onScrubEnd}
           onKeyUp={onScrubEnd}
