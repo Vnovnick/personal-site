@@ -19,10 +19,6 @@ export default function Sidebar() {
     fullNameResize();
   };
 
-  // handles nav scroll to element
-  // const scrollTo = (target: string) => (document.getElementById(target) as HTMLFormElement).scrollIntoView();
-
-  // resizes name on window resize
   const fullNameResize = (): void => {
     let winWidth: number = window.innerWidth;
     if (winWidth < 1270) {
@@ -36,7 +32,6 @@ export default function Sidebar() {
   window.addEventListener("resize", () => {
     fullNameResize();
   });
-  // got online
 
   const navLinkFormatter = (link: string, linkName: string) => {
     return (
@@ -50,8 +45,8 @@ export default function Sidebar() {
         <p
           className={`transition-all w-fit ${
             location.pathname === link
-              ? "pl-10"
-              : "pl-3 group-hover:tracking-wide"
+              ? "pl-[20%]"
+              : "pl-[5%] group-hover:tracking-wide"
           }`}
         >
           {linkName}
@@ -112,7 +107,7 @@ export default function Sidebar() {
           {navLinkFormatter("/contact", "Contact")}
         </Link>
       </div>
-      <div className="mt-8 hidden sm:block">
+      {/* <div className="mt-8 hidden sm:block">
         <button
           type="button"
           className="flex mb-5"
@@ -139,7 +134,7 @@ export default function Sidebar() {
             />
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

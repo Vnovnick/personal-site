@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 
 export default function Bio() {
   return (
-    <div className="block mx-[15px] h-5/6 my-auto" id="bio">
+    <div className="block mx-[1%] h-5/6 my-auto" id="bio">
       <img
         src={image}
         alt="profile"
         className="h-auto min-w-[200px] max-w-[25%] float-right mx-5 rounded-lg"
         id="bio-image"
       />
-      <p className="text-white font-sans ml-5 text-lg">
-        I am a Frontend Development Intern at Proppex and former violinist from
-        Northern California. As a{" "}
+      <p className="text-white font-sans ml-5 text-[2.3vmin] text-min-lg">
+        I am a Junior Frontend Developer at Proppex from Northern California. As
+        a{" "}
         <Link to="/work" id="work-link">
           <span className="text-green-200 hover:text-green-300">
             Frontend Developer
@@ -60,7 +60,7 @@ export default function Bio() {
         <br></br>
         <a
           className="text-green-200 hover:text-green-300"
-          href="https://drive.google.com/file/d/1TeD28kkEYqRii4MuZkhA1SCO634hWmSd/view?usp=sharing"
+          href="https://drive.google.com/file/d/1WKIrhoL4ZS98Y4EgivJ5EAz4KLQbm3tY/view?usp=share_link"
           target="_blank"
         >
           Resume

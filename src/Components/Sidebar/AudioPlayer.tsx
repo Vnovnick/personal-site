@@ -82,7 +82,7 @@ export default function AudioPlayer({
 
   return (
     <div
-      className={`w-56 h-56 flex rounded-lg bg-gradient-to-t from-green-900/30 to-green-700 mx-auto transition-[background] duration-500 bg-[length:100px_400px] ${
+      className={`w-[30vw] h-[30vw] sm:w-[17vw] sm:h-[17vw] lg:w-[12vw] lg:h-[12vw] flex rounded-lg bg-gradient-to-t from-green-900/30 to-green-700 transition-[background] duration-500 bg-[length:100px_400px] ${
         isPlaying && "bg-right"
       }`}
     >
@@ -95,9 +95,11 @@ export default function AudioPlayer({
           <img
             src={image}
             alt={`track artwork for ${title}`}
-            className="rounded-full block h-28 w-28 shadow-even-outer mx-auto"
+            className="rounded-full block w-[50%] shadow-even-outer mx-auto"
           />
-          <h2 className="text-center font-bold text-white/80">{title}</h2>
+          <p className="text-center font-bold text-white/80 text-[1.7vmin]">
+            {title}
+          </p>
         </div>
         <AudioControls
           isPlaying={isPlaying}
@@ -110,7 +112,7 @@ export default function AudioPlayer({
           step="1"
           min="0"
           max={duration ? duration : `${duration}`}
-          className="h-1 w-44 mb-3 rounded-sm bg-green-200 appearance-none transition-[background] duration-200 cursor-pointer mx-auto"
+          className="h-[4%] w-[90%] mb-3 rounded-sm bg-green-200 appearance-none transition-[background] duration-200 cursor-pointer mx-auto"
           onChange={(e) => onScrub(e.target.value)}
           onMouseUp={onScrubEnd}
           onKeyUp={onScrubEnd}

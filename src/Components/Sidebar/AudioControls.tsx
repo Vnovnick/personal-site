@@ -20,7 +20,7 @@ export default function AudioControls({
         <img
           src={toStartButton}
           alt="back-to-start-button"
-          className="w-7 h-7"
+          className="w-[60%] h-[60%]"
           onClick={onPrevClick}
         />
       </button>
@@ -31,7 +31,11 @@ export default function AudioControls({
             onClick={() => setIsPlaying(false)}
             className="m-auto"
           >
-            <img src={pauseButton} alt="pause-button" className="w-9 h-9" />
+            <img
+              src={pauseButton}
+              alt="pause-button"
+              className="w-full h-full"
+            />
           </button>
         </div>
       ) : (
@@ -41,7 +45,7 @@ export default function AudioControls({
             onClick={() => setIsPlaying(true)}
             className="m-auto"
           >
-            <img src={playButton} alt="play-button" className="w-9 h-9" />
+            <img src={playButton} alt="play-button" className="w-full h-full" />
           </button>
         </div>
       )}

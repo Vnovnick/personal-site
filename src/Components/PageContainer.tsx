@@ -9,7 +9,7 @@ export default function PageContainer() {
       <div className="w-full h-fit sm:w-[15%]">
         <Sidebar />
       </div>
-      <ScrollDiv className="w-full overflow-auto bg-black flex">
+      <ScrollDiv className="w-full h-full overflow-auto bg-black flex">
         <Outlet />
       </ScrollDiv>
     </div>

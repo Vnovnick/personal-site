@@ -11,14 +11,14 @@ const scrollTo = (target: string) =>
 export default function PerformanceVideos() {
   return (
     <div className="h-fit w-full flex" id="perf">
-      <div className="w-[5%] text-white text-center text-2xl timeline-grid">
+      <div className="hidden md:grid sm:w-[5%] text-white text-center text-[2.5vmin] timeline-grid">
         <p className="row-start-1 place-self-center">2022</p>
         <p className="row-start-2 place-self-center">2019</p>
         <p className="row-start-6 place-self-center">2018</p>
         <p className="row-start-7 place-self-center">2017</p>
       </div>
-      <div className="w-[95%] lg:flex lg:flex-col">
-        <div className="flex text-white bg-black text-lg py-2 pl-10 sticky top-0">
+      <div className="flex flex-col w-full sm:w-[95%] lg:flex lg:flex-col">
+        <div className="flex w-full justify-center sm:justify-start sm:mr-auto  text-white bg-black text-lg py-2 sticky top-0">
           <button
             type="button"
             className="hover:text-green-300"
@@ -55,7 +55,7 @@ export default function PerformanceVideos() {
           id="first-2022-vid"
           src="https://www.youtube.com/embed/JaF5JwZJy48"
           description={
-            <div className="text-white m-auto text-2xl text-center">
+            <div className="text-white m-auto text-[2.5vmin] text-center">
               <p>Schubert Piano Trio in E flat major No. 2, Op.100</p>
               <p>II. Andante con moto</p>
             </div>
@@ -66,7 +66,7 @@ export default function PerformanceVideos() {
           id="first-2019-vid"
           src="https://www.youtube.com/embed/Z3sLFa3FkmI"
           description={
-            <div className="text-white m-auto text-2xl text-center">
+            <div className="text-white m-auto text-[2.5vmin] text-center">
               <p>Bach Sonata No. 2 in A minor</p>
               <p>Grave</p>
             </div>
@@ -76,7 +76,7 @@ export default function PerformanceVideos() {
         <PerfVideoComp
           src="https://www.youtube.com/embed/vPrTJeND3-k"
           description={
-            <p className="text-white m-auto text-2xl">
+            <p className="text-white m-auto text-[2.5vmin]">
               Ysaye Sonata No. 3 &quot;Ballade&quot;
             </p>
           }
@@ -85,7 +85,7 @@ export default function PerformanceVideos() {
         <PerfVideoComp
           src="https://www.youtube.com/embed/7yx9MddaXPQ"
           description={
-            <p className="text-white m-auto text-2xl">
+            <p className="text-white m-auto text-[2.5vmin]">
               Paganini Caprice No. 10
             </p>
           }
@@ -94,7 +94,7 @@ export default function PerformanceVideos() {
         <PerfVideoComp
           src="https://www.youtube.com/embed/vxzJjWYAz2U?start=596"
           description={
-            <div className="text-white m-auto text-2xl text-center">
+            <div className="text-white m-auto text-[2.5vmin] text-center">
               <p>String Quartet No. 5 in A major, Op. 18, No. 5</p>
               <p>I. Allegro (9:56)</p>
               <p>II. Minuet (15:10)</p>
@@ -107,7 +107,7 @@ export default function PerformanceVideos() {
           id="first-2018-vid"
           src="https://www.youtube.com/embed/qP12tqO3ZdM"
           description={
-            <div className="text-white m-auto text-2xl text-center">
+            <div className="text-white m-auto text-[2.5vmin] text-center">
               <p>Bach Partita No. 2 in D minor</p>
               <p>Chaconne</p>
             </div>
@@ -118,7 +118,7 @@ export default function PerformanceVideos() {
           id="first-2017-vid"
           src="https://www.youtube.com/embed/0jftN00EoSA"
           description={
-            <div className="text-white m-auto text-2xl text-center">
+            <div className="text-white m-auto text-[2.5vmin] text-center">
               <p>Sibelius Violin Concerto</p>
               <p>I. Allegro moderato (0:00)</p>
               <p>II. Adagio di molto (11:50)</p>

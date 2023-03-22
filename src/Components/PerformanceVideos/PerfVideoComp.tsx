@@ -25,11 +25,14 @@ export default function PerfVideoComp({
   id,
 }: PerfVideoCompProps) {
   return (
-    <div id={id} className={`flex h-[450px] my-3 mr-2 ${divClassName}`}>
+    <div
+      id={id}
+      className={`flex items-center flex-col sm:flex-row h-[450px] my-3 mr-2 ${divClassName}`}
+    >
       {left && (
         <>
           <iframe
-            className="embed-vid w-1/2"
+            className="embed-vid w-full h-[75%] sm:h-full sm:w-1/2"
             src={src}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -41,7 +44,7 @@ export default function PerfVideoComp({
         <>
           {description}
           <iframe
-            className="embed-vid w-1/2"
+            className="embed-vid w-full h-[75%] sm:h-full sm:w-1/2"
             src={src}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
