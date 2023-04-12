@@ -6,7 +6,7 @@ import discord from "./discord.svg";
 export default function Portfolio() {
   return (
     <div className="flex flex-col gap-10 my-auto mx-10 py-[5%]">
-      <p className="text-[4vmin] text-white">Work </p>
+      <p className="text-[4vmin] text-white">Work</p>
       <div className="flex w-full gap-5" id="port">
         <div className="w-1/2 flex">
           <img
@@ -17,7 +17,15 @@ export default function Portfolio() {
         </div>
         <div className="w-1/2 p-4">
           <p className="text-[3.5vmin] text-white">
-            Proppex - Junior Frontend Developer
+            <a
+              className="text-cyan-200"
+              href="https://www.proppex.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Proppex
+            </a>{" "}
+            - Junior Frontend Developer
           </p>
           <p className="text-white mb-3 text-[2vmin]">
             {" "}
@@ -39,7 +47,15 @@ export default function Portfolio() {
         <div className="w-1/2" />
         <div className="w-1/2 p-4 ml-auto">
           <p className="text-[3.5vmin] text-white">
-            Proppex - Frontend Developer Intern
+            <a
+              className="text-cyan-200"
+              href="https://www.proppex.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Proppex
+            </a>{" "}
+            - Frontend Developer Intern
           </p>
           <p className="text-white mb-3 text-[2vmin]">
             {" "}
@@ -61,7 +77,14 @@ export default function Portfolio() {
         </div>
         <div className="w-1/2 p-4">
           <div className="flex text-white items-center mb-3">
-            <p className="mr-2 text-[3.5vmin]">Discord Stat Bot</p>
+            <a
+              className="mr-2 text-[3.5vmin] text-indigo-300"
+              href="https://github.com/Vnovnick/apex_discord_bot"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Discord Stat Bot
+            </a>
           </div>
           <div>
             <p className="text-white text-[2vmin]">
@@ -97,7 +120,14 @@ export default function Portfolio() {
         </div>
         <div className="w-1/2 p-4">
           <div className="flex text-white items-center mb-3">
-            <p className="mr-2 text-[3.5vmin]">Run Tracker</p>
+            <a
+              className="mr-2 text-[3.5vmin] text-amber-100"
+              href="https://github.com/Vnovnick/apex_discord_bot"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Run Tracker
+            </a>
           </div>
           <div className="details">
             <p className="text-white text-[2vmin]">
