@@ -1,6 +1,7 @@
 import React from "react";
 import runvid from "./RunTracker.mp4";
 import proppex from "../../Assets/images/Proppex.jpg";
+import discord from "./discord.svg";
 
 export default function Portfolio() {
   return (
@@ -54,6 +55,40 @@ export default function Portfolio() {
         </div>
       </div>
       <p className="text-[4vmin] text-white">Projects </p>
+      <div className="flex w-full mx-auto gap-5" id="port">
+        <div className="w-1/2">
+          <img src={discord} alt="discord" className="w-1/3 mx-auto" />
+        </div>
+        <div className="w-1/2 p-4">
+          <div className="flex text-white items-center mb-3">
+            <p className="mr-2 text-[3.5vmin]">Discord Stat Bot</p>
+          </div>
+          <div>
+            <p className="text-white text-[2vmin]">
+              Created a Discord chat bot that retrieves in-game user stat data
+              for the game Apex Legends. Using the Apex Legends Status API, this
+              bot allows for the user to type in commands which will post their
+              stats for specific legends, current in-game map rotations, news
+              updates, and general account info, such as current season rank and
+              level, into the server. The bot was built using JavaScript,
+              Node.js, Express.js, and the DiscordJS library with all
+              interactions being handled with ngrok.
+            </p>
+            <p className="text-white text-[2vmin]">
+              (See{" "}
+              <a
+                href="https://github.com/Vnovnick/apex_discord_bot"
+                target="_blank"
+                rel="noreferrer"
+                className="text-green-200/80 hover:text-green-300"
+              >
+                link
+              </a>{" "}
+              for the full Github repository and README file)
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="flex w-full  mx-auto gap-5" id="port">
         <div className="w-1/2">
           <video autoPlay muted loop className="rounded-xl w-4/5 mx-auto">
