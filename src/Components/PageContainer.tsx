@@ -5,8 +5,8 @@ import Sidebar from "./Sidebar/Sidebar";
 
 export default function PageContainer() {
   return (
-    <div className="overflow-auto h-screen sm:flex">
-      <div className="w-full h-fit sm:w-[15%]">
+    <div className="overflow-auto h-screen md:flex">
+      <div className="w-full h-fit md:w-[15%]">
         <Sidebar />
       </div>
       <ScrollDiv className="w-full h-full overflow-auto bg-black flex">

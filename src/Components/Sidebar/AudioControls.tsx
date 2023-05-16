@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction } from "react";
-import playButton from "../../Assets/images/play.svg";
-import pauseButton from "../../Assets/images/pause.svg";
+import playButton from "./play.svg";
+import pauseButton from "./pause.svg";
 import toStartButton from "../../Assets/images/previous.png";
 
 interface AudioControlsProps {
@@ -8,6 +8,8 @@ interface AudioControlsProps {
   setIsPlaying: Dispatch<SetStateAction<boolean>>;
   onPrevClick: () => void;
 }
+
+// play button not appearing for some reason in firefox
 
 export default function AudioControls({
   isPlaying,
@@ -24,7 +26,7 @@ export default function AudioControls({
           onClick={onPrevClick}
         />
       </button>
-      {isPlaying ? (
+      {isPlaying && (
         <div className="p-1 flex">
           <button
             type="button"
@@ -38,14 +40,19 @@ export default function AudioControls({
             />
           </button>
         </div>
-      ) : (
+      )}
+      {!isPlaying && (
         <div className="p-1 flex">
           <button
             type="button"
             onClick={() => setIsPlaying(true)}
             className="m-auto"
           >
-            <img src={playButton} alt="play-button" className="w-full h-full" />
+            <img
+              src={require("./play.svg")}
+              alt="play-button"
+              className="w-full h-full"
+            />
           </button>
         </div>
       )}

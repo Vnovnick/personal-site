@@ -36,7 +36,7 @@ export default function Sidebar() {
   const navLinkFormatter = (link: string, linkName: string) => {
     return (
       <div
-        className={`w-full flex group transition-[background] duration-100 ${
+        className={`w-full flex group transition-[background] duration-100 text-[1em] lg:text-[1.2em] ${
           location.pathname === link
             ? "bg-left bg-gradient-to-r from-black via-green-900/50 bg-[length:700px_100px]"
             : "hover:bg-gradient-to-r hover:from-black hover:via-green-900/50 hover:bg-[length:600px_100px] bg-right"
@@ -56,10 +56,10 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="bg-black flex flex-col h-fit sm:h-screen">
+    <div className="bg-black flex flex-col h-fit md:h-screen">
       <div className="mx-auto flex flex-col">
         <Link to="/about-me" id="name">
-          <p className="text-white text-3xl pt-5" id="fullName">
+          <p className="text-white text-3xl pt-[10%]" id="fullName">
             Nicholas Safonov
           </p>
         </Link>
