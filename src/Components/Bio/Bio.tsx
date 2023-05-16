@@ -60,7 +60,7 @@ export default function Bio() {
         <br></br>
         <a
           className="text-green-200 hover:text-green-300"
-          href="https://drive.google.com/file/d/1WKIrhoL4ZS98Y4EgivJ5EAz4KLQbm3tY/view?usp=share_link"
+          href="https://drive.google.com/file/d/1pGuKBi1hIAMZQ2mrc4MMoBSwMCxy_zFd/view?usp=sharing"
           target="_blank"
         >
           Resume
