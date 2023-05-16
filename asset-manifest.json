@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/personal-site/static/css/main.3591cf8b.css",
-    "main.js": "/personal-site/static/js/main.429bf063.js",
+    "main.css": "/personal-site/static/css/main.5fef2030.css",
+    "main.js": "/personal-site/static/js/main.027bfbb0.js",
     "static/media/FS_Mast_v2.wav": "/personal-site/static/media/FS_Mast_v2.700d81bf859745f9aa35.wav",
     "static/media/freeSamplesLoop.wav": "/personal-site/static/media/freeSamplesLoop.bb080c71033b188a7d4a.wav",
-    "static/media/bioImage.jpg": "/personal-site/static/media/bioImage.1dde1734c39cb809e679.jpg",
     "static/media/RunTracker.mp4": "/personal-site/static/media/RunTracker.01cf638525381356e586.mp4",
+    "static/media/bioImageComp.jpg": "/personal-site/static/media/bioImageComp.dde019f658257212104f.jpg",
     "static/media/ecumenopolis.webp": "/personal-site/static/media/ecumenopolis.4d1e30eb37555429b0ea.webp",
     "static/media/calmLoopCropped.jpg": "/personal-site/static/media/calmLoopCropped.d55576d01225de74a975.jpg",
     "static/media/gitHubWhiteLogo.png": "/personal-site/static/media/gitHubWhiteLogo.e06a357a770a001ad049.png",
     "static/media/discord.svg": "/personal-site/static/media/discord.d1d464bd6481a21fcde599e0d8699273.svg",
-    "static/media/play.svg": "/personal-site/static/media/play.e5fc94c86e4755a135d12e5f88526314.svg",
     "index.html": "/personal-site/index.html",
     "static/media/pause.svg": "/personal-site/static/media/pause.a156feb090c82bf2f49f15f47f0ad2aa.svg",
-    "main.3591cf8b.css.map": "/personal-site/static/css/main.3591cf8b.css.map",
-    "main.429bf063.js.map": "/personal-site/static/js/main.429bf063.js.map"
+    "static/media/play.svg": "/personal-site/static/media/play.016246b64794ab801f9a78b8822eb8e9.svg",
+    "main.5fef2030.css.map": "/personal-site/static/css/main.5fef2030.css.map",
+    "main.027bfbb0.js.map": "/personal-site/static/js/main.027bfbb0.js.map"
   },
   "entrypoints": [
-    "static/css/main.3591cf8b.css",
-    "static/js/main.429bf063.js"
+    "static/css/main.5fef2030.css",
+    "static/js/main.027bfbb0.js"
   ]
 }
