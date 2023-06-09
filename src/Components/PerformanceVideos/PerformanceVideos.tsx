@@ -53,7 +53,7 @@ export default function PerformanceVideos() {
         </div>
         <PerfVideoComp
           id="first-2022-vid"
-          src="https://www.youtube.com/embed/JaF5JwZJy48"
+          src="https://www.youtube.com/embed/JaF5JwZJy48?html5=1"
           description={
             <div className="text-white m-auto text-[1.3em] lg:text-[1.5em] text-center">
               <p>Schubert Piano Trio in E flat major No. 2, Op.100</p>
@@ -64,7 +64,7 @@ export default function PerformanceVideos() {
         />
         <PerfVideoComp
           id="first-2019-vid"
-          src="https://www.youtube.com/embed/Z3sLFa3FkmI"
+          src="https://www.youtube-nocookie.com/embed/Z3sLFa3FkmI"
           description={
             <div className="text-white m-auto text-[1.3em] lg:text-[1.5em] text-center">
               <p>Bach Sonata No. 2 in A minor</p>
@@ -74,7 +74,7 @@ export default function PerformanceVideos() {
           left
         />
         <PerfVideoComp
-          src="https://www.youtube.com/embed/vPrTJeND3-k"
+          src="https://www.youtube-nocookie.com/embed/vPrTJeND3-k"
           description={
             <p className="text-white m-auto text-[1.3em] lg:text-[1.5em]">
               Ysaye Sonata No. 3 &quot;Ballade&quot;
@@ -83,7 +83,7 @@ export default function PerformanceVideos() {
           right
         />
         <PerfVideoComp
-          src="https://www.youtube.com/embed/7yx9MddaXPQ"
+          src="https://www.youtube-nocookie.com/embed/7yx9MddaXPQ"
           description={
             <p className="text-white m-auto text-[1.3em] lg:text-[1.5em]">
               Paganini Caprice No. 10
@@ -105,7 +105,7 @@ export default function PerformanceVideos() {
         />
         <PerfVideoComp
           id="first-2018-vid"
-          src="https://www.youtube.com/embed/qP12tqO3ZdM"
+          src="https://www.youtube-nocookie.com/embed/qP12tqO3ZdM"
           description={
             <div className="text-white m-auto text-[1.3em] lg:text-[1.5em] text-center">
               <p>Bach Partita No. 2 in D minor</p>
@@ -116,7 +116,7 @@ export default function PerformanceVideos() {
         />
         <PerfVideoComp
           id="first-2017-vid"
-          src="https://www.youtube.com/embed/0jftN00EoSA"
+          src="https://www.youtube-nocookie.com/embed/0jftN00EoSA"
           description={
             <div className="text-white m-auto text-[1.3em] lg:text-[1.5em] text-center">
               <p>Sibelius Violin Concerto</p>

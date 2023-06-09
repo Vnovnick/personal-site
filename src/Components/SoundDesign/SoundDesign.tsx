@@ -13,7 +13,7 @@ export default function SoundDesign() {
         <p className="text-[3.5vmin] py-10">Sound Design Reel (2022)</p>
         <iframe
           className="w-full h-[40vh] sm:w-[50%] sm:h-[50vh]   mx-auto"
-          src="https://www.youtube.com/embed/UgGg66IpR3U"
+          src="https://www.youtube-nocookie.com/embed/UgGg66IpR3U"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         />
