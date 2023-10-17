@@ -122,7 +122,7 @@ export default function Portfolio() {
           <div className="flex text-white items-center mb-3">
             <a
               className="mr-2 text-[3.5vmin] text-amber-100"
-              href="https://github.com/Vnovnick/apex_discord_bot"
+              href="https://github.com/Vnovnick/run-tracker-ns"
               target="_blank"
               rel="noreferrer"
             >
