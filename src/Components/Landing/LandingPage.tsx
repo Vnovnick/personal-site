@@ -1,6 +1,8 @@
 import React from "react";
 import treble from "../Navigation/treble-clef.svg";
 import { Link, useLocation } from "react-router-dom";
+import gitHub from "../../Assets/images/gitHubWhiteLogo.png";
+import linkedIn from "../../Assets/images/linkedIn.png";
 
 export default function LandingPage() {
   const location = useLocation();
@@ -51,18 +53,18 @@ export default function LandingPage() {
             </p>
             <div>
               <p className="text-white mt-3.5">
-                {"<"} {">"}
+                {"<"}/{">"}
               </p>
               <p className="text-white -mt-2.5">
-                {"<"}/{">"}
+                {"<"} {">"}
               </p>
             </div>
             <div>
               <p className="text-white mt-1">
-                {"<"} {">"}
+                {"<"}/{">"}
               </p>
               <p className="text-white -mt-2.5">
-                {"<"}/{">"}
+                {"<"} {">"}
               </p>
               <div className="flex text-white -mt-2.5 -ml-2.5">
                 <p className="text-xl">{"#"}</p>
@@ -115,6 +117,32 @@ export default function LandingPage() {
         <Link to="/contact" id="contact-link">
           {navLinkFormatter("/contact", "Contact")}
         </Link>
+      </div>
+      <div className="flex w-1/6 mx-auto">
+        <a
+          href="https://github.com/Vnovnick"
+          className="grid place-items-center group"
+          target="_blank"
+        >
+          <div className="rounded-full w-10 h-10 group-hover:bg-green-900/50 col-start-1 row-start-1" />
+          <img
+            src={gitHub}
+            alt="gitHub"
+            className="w-14 col-start-1 row-start-1"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nicholas-safonov/"
+          className="grid place-items-center group"
+          target="_blank"
+        >
+          <div className="rounded-full w-10 h-10 group-hover:bg-green-900/50 col-start-1 row-start-1" />
+          <img
+            src={linkedIn}
+            alt="gitHub"
+            className="w-6 col-start-1 row-start-1"
+          />
+        </a>
       </div>
     </div>
   );
