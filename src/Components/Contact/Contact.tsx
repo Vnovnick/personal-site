@@ -4,23 +4,15 @@ import linkedIn from "../../Assets/images/linkedIn.png";
 
 export default function Contact() {
   return (
-    <div className="grid sm:h-full w-full bg-black">
-      {/* <div className="grid col-start-1 row-start-1">
-        <div className="col-start-1 row-start-1 w-0 h-0 border-b-white/10 border-x-transparent border-x-[400px] border-b-[400px] -rotate-45 -mt-14 -ml-64" />
-        <div className="col-start-1 row-start-1 w-0 h-0 border-b-green-900/30 border-x-transparent border-x-[400px] border-b-[400px] -rotate-45 -mt-10 -ml-60" />
-        <div className="col-start-1 row-start-1 w-0 h-0 border-b-green-800/30 border-x-transparent border-x-[400px] border-b-[400px] -rotate-45 -mt-6 -ml-56" />
-        <div className="col-start-1 row-start-1 w-0 h-0 border-b-black border-x-transparent border-x-[400px] border-b-[400px] -rotate-45 -mt-2 -ml-52" />
-      </div> */}
+    <div className="grid h-full max-h-[700px] w-full mx-auto max-w-[1440px] bg-black">
       <div className="grid col-start-1 row-start-1">
         <div className="col-start-1 row-start-1 bg-white/10" />
-        <div className="col-start-1 row-start-1 bg-green-900/30 mt-[1vh] ml-[1vh]" />
-        <div className="col-start-1 row-start-1 bg-green-800/30 mt-[2vh] ml-[2vh]" />
-        <div className="col-start-1 row-start-1 bg-black mt-[3vh] ml-[3vh] pt-[3vh] pl-[3vh]">
-          <p className="text-white text-[3vmin]">
-            Email: safonov.nick10@gmail.com
-          </p>
+        <div className="col-start-1 row-start-1 bg-green-900/30 m-2" />
+        <div className="col-start-1 row-start-1 bg-green-800/30 m-4" />
+        <div className="col-start-1 row-start-1 bg-black m-6 pt-6 pl-6">
+          <p className="text-white text-2xl">Email: safonov.nick10@gmail.com</p>
           <div className="flex items-center my-3">
-            <p className="text-white text-[3vmin]">Other: </p>
+            <p className="text-white text-2xl">Other: </p>
             <div className="flex">
               <a
                 href="https://github.com/Vnovnick"
@@ -49,7 +41,7 @@ export default function Contact() {
             </div>
           </div>
           <a
-            className="text-green-200 hover:text-green-300 text-[2.5vmin]"
+            className="text-green-200 hover:text-green-300 text-2xl"
             href="https://drive.google.com/file/d/1hutrBLP-jV6Xy3HQ7Y3DMC3_EZZ6Yjqb/view?usp=sharing"
             target="_blank"
           >

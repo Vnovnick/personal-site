@@ -10,7 +10,7 @@ const scrollTo = (target: string) =>
 
 export default function PerformanceVideos() {
   return (
-    <div className="h-fit w-full flex" id="perf">
+    <div className="h-fit mx-auto w-full md:w-4/5 flex" id="perf">
       <div className="hidden lg:grid sm:w-[5%] text-white text-center text-[1.5em] timeline-grid">
         <p className="row-start-1 place-self-center">2022</p>
         <p className="row-start-2 place-self-center">2019</p>

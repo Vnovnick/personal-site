@@ -1,5 +1,5 @@
 import React from "react";
-import AudioPlayer from "../Sidebar/AudioPlayer";
+import AudioPlayer from "../Navigation/AudioPlayer";
 import calmLoopArt from "../../Assets/trackArt/calmLoopCropped.jpg";
 import ecumenopolis from "../../Assets/trackArt/ecumenopolis.webp";
 

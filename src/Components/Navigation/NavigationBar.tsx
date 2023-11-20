@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Sidebar.scss";
+import "./NavigationBar.scss";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import AudioPlayer from "./AudioPlayer";
@@ -11,7 +11,7 @@ import linkedIn from "../../Assets/images/linkedIn.png";
 const stellaris = require("../../Assets/tracks/FS_Mast_v2.wav");
 const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
 
-export default function Sidebar() {
+export default function NavigationBar() {
   const [showPlayer, setShowPlayer] = useState(false);
   const location = useLocation();
 
@@ -36,17 +36,18 @@ export default function Sidebar() {
   const navLinkFormatter = (link: string, linkName: string) => {
     return (
       <div
-        className={`w-full flex group transition-[background] duration-100 text-[1em] lg:text-[1.2em] ${
-          location.pathname === link
-            ? "bg-left bg-gradient-to-r from-black via-green-900/50 bg-[length:700px_100px]"
-            : "hover:bg-gradient-to-r hover:from-black hover:via-green-900/50 hover:bg-[length:600px_100px] bg-right"
+        className={`flex grid group transition-[background] duration-100 text-base lg:text-xl ${
+          location.pathname === link ? "" : ""
         }`}
       >
+        <div
+          className={`col-start-1 row-start-1  group-hover:w-full transition-[width] duration-100  mx-auto bg-gradient-to-r from-green-900/50 via-black to-green-900/50 rounded-md ${
+            location.pathname === link ? "w-full" : "w-0"
+          }`}
+        />
         <p
-          className={`transition-all w-fit ${
-            location.pathname === link
-              ? "pl-[20%]"
-              : "pl-[5%] group-hover:tracking-wide"
+          className={`col-start-1 row-start-1 transition-all w-fit px-3 py-1 ${
+            location.pathname === link ? "font-semibold" : "font-normal"
           }`}
         >
           {linkName}
@@ -56,14 +57,15 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="bg-black flex flex-col h-fit md:h-screen">
-      <div className="mx-auto flex flex-col">
-        <Link to="/about-me" id="name">
-          <p className="text-white text-3xl pt-[10%]" id="fullName">
+    <div className="bg-black flex flex-col h-fit">
+      <div className="mx-auto flex my-5 items-center w-2/3 justify-around">
+        <div className="w-1/6" />
+        <Link to="/" id="name">
+          <p className="text-white text-3xl md:text-5xl" id="fullName">
             Nicholas Safonov
           </p>
         </Link>
-        <div className="flex mx-auto">
+        <div className="flex w-1/6">
           <a
             href="https://github.com/Vnovnick"
             className="grid place-items-center group"
@@ -90,9 +92,9 @@ export default function Sidebar() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col text-green-400 text-lg h-1/4 justify-between mt-10 w-full">
-        <Link to="/about-me" id="about-me-link">
-          {navLinkFormatter("/about-me", "About Me")}
+      <div className="flex flex-col md:flex-row text-green-400 text-lg mx-auto md:gap-14 mb-5">
+        <Link to="/" id="about-me-link">
+          {navLinkFormatter("/", "About Me")}
         </Link>
         <Link to="/work" id="work-link">
           {navLinkFormatter("/work", "Work")}

@@ -18,8 +18,8 @@ root.render(
     <HashRouter>
       <Routes>
         <Route element={<PageContainer />}>
-          <Route path="/" element={<Navigate to="/about-me" />} />
-          <Route path="/about-me" element={<Bio />} />
+          <Route path="/" element={<Bio />} />
+          {/* <Route path="/about-me" element={<Bio />} /> */}
           <Route path="/work" element={<Portfolio />} />
           <Route path="/performance-videos" element={<PerformanceVideos />} />
           <Route path="/sound-design" element={<SoundDesign />} />

@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 export default function Bio() {
   return (
-    <div className="block mx-[1%] h-5/6 my-auto" id="bio">
+    <div className="h-full m-auto w-full max-w-[1440px] py-5" id="bio">
       <img
         src={image}
         alt="profile"
         className="h-auto min-w-[200px] max-w-[25%] float-right mx-5 rounded-lg"
         id="bio-image"
       />
-      <p className="text-white font-sans ml-5 text-[2.3vmin] text-min-lg">
+      <p className="text-white font-sans ml-5 text-lg md:text-xl">
         I am a Junior Frontend Developer at Proppex from Northern California. As
         a{" "}
         <Link to="/work" id="work-link">
