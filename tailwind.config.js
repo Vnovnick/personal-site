@@ -5,6 +5,10 @@ module.exports = {
     width: ["responsive", "hover", "focus"],
   },
   theme: {
+    fontFamily: {
+      serif: ["Lara", "serif"],
+      sans: ["Yantramanav", "sans-serif"],
+    },
     extend: {
       transitionProperty: {
         height: "height",

@@ -7,6 +7,7 @@ import calmLoopArt from "../../Assets/trackArt/calmLoopCropped.jpg";
 import ecumenopolis from "../../Assets/trackArt/ecumenopolis.webp";
 import gitHubImage from "../../Assets/images/gitHubWhiteLogo.png";
 import linkedIn from "../../Assets/images/linkedIn.png";
+import treble from "./treble-clef.svg";
 
 const stellaris = require("../../Assets/tracks/FS_Mast_v2.wav");
 const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
@@ -35,11 +36,7 @@ export default function NavigationBar() {
 
   const navLinkFormatter = (link: string, linkName: string) => {
     return (
-      <div
-        className={`flex grid group transition-[background] duration-100 text-base lg:text-xl ${
-          location.pathname === link ? "" : ""
-        }`}
-      >
+      <div className="flex grid group transition-[background] duration-100 text-base lg:text-xl">
         <div
           className={`col-start-1 row-start-1  group-hover:w-full transition-[width] duration-100  mx-auto bg-gradient-to-r from-green-900/50 via-black to-green-900/50 rounded-md ${
             location.pathname === link ? "w-full" : "w-0"
@@ -57,8 +54,8 @@ export default function NavigationBar() {
   };
 
   return (
-    <div className="bg-black flex flex-col h-fit">
-      <div className="mx-auto flex my-5 items-center w-2/3 justify-around">
+    <div className="bg-black h-fit">
+      {/* <div className="mx-auto flex my-5 items-center w-2/3 justify-around">
         <div className="w-1/6" />
         <Link to="/" id="name">
           <p className="text-white text-3xl md:text-5xl" id="fullName">
@@ -91,23 +88,41 @@ export default function NavigationBar() {
             />
           </a>
         </div>
-      </div>
-      <div className="flex flex-col md:flex-row text-green-400 text-lg mx-auto md:gap-14 mb-5">
-        <Link to="/" id="about-me-link">
-          {navLinkFormatter("/", "About Me")}
-        </Link>
-        <Link to="/work" id="work-link">
-          {navLinkFormatter("/work", "Work")}
-        </Link>
-        <Link to="/performance-videos" id="perf-videos-link">
-          {navLinkFormatter("/performance-videos", "Performance Videos")}
-        </Link>
-        <Link to="/sound-design" id="sound-design-link">
-          {navLinkFormatter("/sound-design", "Sound Design/Music")}
-        </Link>
-        <Link to="/contact" id="contact-link">
-          {navLinkFormatter("/contact", "Contact")}
-        </Link>
+      </div> */}
+      <div className="w-full max-w-[1440px] grid mx-auto">
+        {/* <div className="col-start-1 row-start-1 grid w-full px-5 mt-3">
+          <div className="w-full col-start-1 row-start-1">
+            <img
+              alt="Treble clef"
+              src={treble}
+              className="w-32 h-32 -mt-5 -ml-5 rotate-[-7deg]"
+            />
+          </div>
+          <div className="col-start-1 row-start-1 flex flex-col gap-y-4">
+            <div className="w-full h-0.5 bg-white/80" />
+            <div className="w-full h-0.5 bg-white/80" />
+            <div className="w-full h-0.5 bg-white/80" />
+            <div className="w-full h-0.5 bg-white/80" />
+            <div className="w-full h-0.5 bg-white/80" />
+          </div>
+        </div> */}
+        <div className="col-start-1 row-start-1 flex flex-col md:flex-row text-green-400 text-lg mx-auto md:gap-14 my-5 p-2 rounded-xl h-fit">
+          <Link to="/about-me" id="about-me-link">
+            {navLinkFormatter("/about-me", "About Me")}
+          </Link>
+          <Link to="/work" id="work-link">
+            {navLinkFormatter("/work", "Work")}
+          </Link>
+          <Link to="/performance-videos" id="perf-videos-link">
+            {navLinkFormatter("/performance-videos", "Performance Videos")}
+          </Link>
+          <Link to="/sound-design" id="sound-design-link">
+            {navLinkFormatter("/sound-design", "Sound Design/Music")}
+          </Link>
+          <Link to="/contact" id="contact-link">
+            {navLinkFormatter("/contact", "Contact")}
+          </Link>
+        </div>
       </div>
       {/* <div className="mt-8 hidden sm:block">
         <button
