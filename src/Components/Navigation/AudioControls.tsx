@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction } from "react";
-import playButton from "./play.svg";
+import playButton from "./playButton.svg";
 import pauseButton from "./pause.svg";
 import toStartButton from "../../Assets/images/previous.png";
 
@@ -17,45 +17,34 @@ export default function AudioControls({
   onPrevClick,
 }: AudioControlsProps) {
   return (
-    <div className="grid grid-cols-3 w-2/3 mx-auto">
+    <div className="flex mx-auto">
       <button type="button">
         <img
           src={toStartButton}
           alt="back-to-start-button"
-          className="w-[60%] h-[60%]"
+          className="w-5 h-5"
           onClick={onPrevClick}
         />
       </button>
       {isPlaying && (
-        <div className="p-1 flex">
-          <button
-            type="button"
-            onClick={() => setIsPlaying(false)}
-            className="m-auto"
-          >
-            <img
-              src={pauseButton}
-              alt="pause-button"
-              className="w-full h-full"
-            />
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => setIsPlaying(false)}
+          className="m-auto p-1"
+        >
+          <img src={pauseButton} alt="pause-button" className="w-8 h-8" />
+        </button>
       )}
       {!isPlaying && (
-        <div className="p-1 flex">
-          <button
-            type="button"
-            onClick={() => setIsPlaying(true)}
-            className="m-auto"
-          >
-            <img
-              src={require("./play.svg")}
-              alt="play-button"
-              className="w-full h-full"
-            />
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => setIsPlaying(true)}
+          className="m-auto p-1 flex"
+        >
+          <img src={playButton} alt="play-button" className="w-8 h-8" />
+        </button>
       )}
+      <div className="w-5 h-5" />
     </div>
   );
 }

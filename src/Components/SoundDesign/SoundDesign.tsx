@@ -8,19 +8,19 @@ const calmLoop = require("../../Assets/tracks/freeSamplesLoop.wav");
 
 export default function SoundDesign() {
   return (
-    <div className="w-full text-white">
-      <div className="flex flex-col w-full text-center">
-        <p className="text-[3.5vmin] py-10">Sound Design Reel (2022)</p>
+    <div className="w-full max-w-[1240px] mx-auto text-white flex flex-col lg:flex-row lg:justify-around pb-10 lg:pb-0">
+      <div className="flex flex-col text-center">
+        <p className="text-4xl py-10">Sound Design Reel (2022)</p>
         <iframe
-          className="w-full h-[40vh] sm:w-[50%] sm:h-[50vh]   mx-auto"
+          className="w-[100vw] max-w-[750px] h-[400px] mx-auto"
           src="https://www.youtube-nocookie.com/embed/UgGg66IpR3U"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         />
       </div>
-      <div className="w-full text-center flex flex-col items-center">
-        <p className="text-[3.5vmin] py-10">Music</p>
-        <div className="flex w-full justify-center gap-[10%]">
+      <div className="text-center flex flex-col items-center">
+        <p className="text-4xl py-10">Music</p>
+        <div className="flex lg:flex-col gap-10">
           <AudioPlayer
             title="Rain Loop"
             audioSrc={calmLoop}

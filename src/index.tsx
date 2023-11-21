@@ -20,7 +20,7 @@ root.render(
       <Routes>
         <Route element={<PageContainer />}>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/about-me" element={<Bio />} />
+          <Route path="/about" element={<Bio />} />
           <Route path="/work" element={<Portfolio />} />
           <Route path="/performance-videos" element={<PerformanceVideos />} />
           <Route path="/sound-design" element={<SoundDesign />} />

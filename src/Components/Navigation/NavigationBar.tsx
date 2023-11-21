@@ -8,34 +8,34 @@ import linkedIn from "../../Assets/images/linkedIn.png";
 export default function NavigationBar() {
   const location = useLocation();
 
-  window.onload = () => {
-    fullNameResize();
-  };
+  // window.onload = () => {
+  //   fullNameResize();
+  // };
 
-  const fullNameResize = (): void => {
-    let winWidth: number = window.innerWidth;
-    if (winWidth < 1270) {
-      (document.getElementById("fullName") as HTMLFormElement).innerHTML =
-        "Nick S.";
-    } else if (winWidth >= 1271) {
-      (document.getElementById("fullName") as HTMLFormElement).innerHTML =
-        "Nicholas Safonov";
-    }
-  };
-  window.addEventListener("resize", () => {
-    fullNameResize();
-  });
+  // const fullNameResize = (): void => {
+  //   let winWidth: number = window.innerWidth;
+  //   if (winWidth < 1270) {
+  //     (document.getElementById("fullName") as HTMLFormElement).innerHTML =
+  //       "Nick S.";
+  //   } else if (winWidth >= 1271) {
+  //     (document.getElementById("fullName") as HTMLFormElement).innerHTML =
+  //       "Nicholas Safonov";
+  //   }
+  // };
+  // window.addEventListener("resize", () => {
+  //   fullNameResize();
+  // });
 
   const navLinkFormatter = (link: string, linkName: string) => {
     return (
-      <div className="flex grid group transition-[background] duration-100 text-base lg:text-xl">
+      <div className="flex grid group transition-[background] duration-100 text-xl">
         <div
           className={`col-start-1 row-start-1  group-hover:w-full transition-[width] duration-100  mx-auto bg-gradient-to-r from-green-900/50 via-black to-green-900/50 rounded-md ${
             location.pathname === link ? "w-full" : "w-0"
           }`}
         />
         <p
-          className={`col-start-1 row-start-1 transition-all w-fit px-3 py-1 ${
+          className={`col-start-1 row-start-1 transition-all w-fit px-3 py-1 whitespace-nowrap ${
             location.pathname === link ? "font-semibold" : "font-normal"
           }`}
         >
@@ -95,9 +95,9 @@ export default function NavigationBar() {
             />
           </a>
         </div>
-        <div className="col-start-1 row-start-1 flex flex-col md:flex-row text-green-400 text-lg mx-auto md:gap-14 my-5 p-2 rounded-xl h-fit">
-          <Link to="/about-me" id="about-me-link">
-            {navLinkFormatter("/about-me", "About Me")}
+        <div className="col-start-1 row-start-1 flex flex-col lg:flex-row text-green-400 text-lg mx-auto lg:gap-8 xl:gap-14 my-5 p-2 rounded-xl h-fit">
+          <Link to="/about" id="about-me-link">
+            {navLinkFormatter("/about", "About")}
           </Link>
           <Link to="/work" id="work-link">
             {navLinkFormatter("/work", "Work")}
@@ -106,7 +106,7 @@ export default function NavigationBar() {
             {navLinkFormatter("/performance-videos", "Performance Videos")}
           </Link>
           <Link to="/sound-design" id="sound-design-link">
-            {navLinkFormatter("/sound-design", "Sound Design/Music")}
+            {navLinkFormatter("/sound-design", "Sound Design")}
           </Link>
           <Link to="/contact" id="contact-link">
             {navLinkFormatter("/contact", "Contact")}

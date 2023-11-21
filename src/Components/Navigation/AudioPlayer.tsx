@@ -82,7 +82,7 @@ export default function AudioPlayer({
 
   return (
     <div
-      className={`w-[30vw] h-[30vw] mb-[5%] sm:w-[17vw] sm:h-[17vw] lg:w-[12vw] lg:h-[12vw] flex rounded-lg bg-gradient-to-t from-green-900/30 to-green-700 transition-[background] duration-500 bg-[length:100px_400px] ${
+      className={`w-52 h-52 flex rounded-lg bg-gradient-to-t from-green-900/30 to-green-700 transition-[background] duration-500 bg-[length:100px_400px] ${
         isPlaying && "bg-right"
       }`}
     >
@@ -97,7 +97,7 @@ export default function AudioPlayer({
             alt={`track artwork for ${title}`}
             className="rounded-full block w-[50%] shadow-even-outer mx-auto"
           />
-          <p className="text-center font-bold text-white/80 text-[1.7vmin]">
+          <p className="text-center font-bold text-white/80 text-base">
             {title}
           </p>
         </div>
