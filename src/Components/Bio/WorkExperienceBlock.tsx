@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import SkillPill from "./SkillPill";
 
 interface WorkExperienceBlockProps {
   link: string;
@@ -28,7 +27,7 @@ export default function WorkExperienceBlock({
           <p className="text-xl">
             <span className={companyClassName}>{company}</span> - {jobTitle}
           </p>
-          <p className="text-green-100 opacity-0 group-hover:opacity-100 transition-all duration-100">
+          <p className="text-white/80 group-hover:text-white mr-2 group-hover:mr-0 transition-all duration-100">
             {">"}
             {">"}
           </p>

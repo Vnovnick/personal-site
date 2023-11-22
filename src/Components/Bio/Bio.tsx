@@ -133,6 +133,18 @@ export default function Bio() {
           ))}
         </div>
       </div>
+      <a
+        href="https://drive.google.com/file/d/1SFLxL2B9wNtQq56UctmMKEGAvC60fL26/view?usp=sharing"
+        target="_blank"
+      >
+        <div className="text-white/80 hover:text-white text-lg mt-10 py-3 px-6 bg-green-900/30 group hover:bg-green-900/50 rounded-2xl transition-all duration-100 w-fit">
+          My Resume{" "}
+          <span className="pl-0 group-hover:pl-2 transition-all duration-100">
+            {">"}
+            {">"}
+          </span>
+        </div>
+      </a>
     </div>
   );
 }
