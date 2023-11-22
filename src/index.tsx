@@ -21,7 +21,7 @@ root.render(
         <Route element={<PageContainer />}>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<Bio />} />
-          <Route path="/work" element={<Portfolio />} />
+          <Route path="/projects" element={<Portfolio />} />
           <Route path="/performance-videos" element={<PerformanceVideos />} />
           <Route path="/sound-design" element={<SoundDesign />} />
           <Route path="/contact" element={<Contact />} />

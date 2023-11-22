@@ -98,7 +98,18 @@ export default function Bio() {
             link="https://www.proppex.com/"
             companyClassName="text-cyan-200"
             company="Proppex"
-            description="Create new features for product MVP and beta testing and lead frontend development efforts across the entire application. Accelerate sprint goal completion through constant collaboration and peer mentoring."
+            description={
+              <>
+                <p>
+                  Create new features for product MVP and beta testing and lead
+                  frontend development efforts across the entire application
+                </p>
+                <p>
+                  Accelerate sprint goal completion through peer mentoring by
+                  20%
+                </p>
+              </>
+            }
             workTimePeriod="March 2023 - Present"
           />
           <WorkExperienceBlock
