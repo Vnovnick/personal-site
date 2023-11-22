@@ -27,7 +27,7 @@ export default function LandingPage() {
   };
   return (
     <div className="h-full mx-auto w-full max-w-[1100px] grid">
-      <div className="col-start-1 row-start-1 grid w-[540px] mx-auto px-5">
+      <div className="col-start-1 row-start-1 grid w-full max-w-[540px] mx-auto px-5">
         <div className="w-fit col-start-1 row-start-1 flex flex-col">
           <img
             alt="Treble clef"
@@ -96,15 +96,19 @@ export default function LandingPage() {
           <div className="h-full w-0.5 bg-white/80" />
         </div>
       </div>
-      <div className="col-start-1 row-start-1 flex flex-col">
-        <div className="flex flex-col mx-auto mt-44">
-          <p className="text-8xl text-green-500 bg-black z-10">Nicholas</p>
-          <p className="text-8xl text-green-500 ml-20">Safonov</p>
-          <p className="text-white text-5xl ml-32 flex w-[380px] md:w-[390px]">
+      <div className="col-start-1 row-start-1 flex flex-col items-center">
+        <div className="flex flex-col mt-44">
+          <p className="text-7xl sm:text-8xl text-green-500 bg-black z-10">
+            Nicholas
+          </p>
+          <p className="text-7xl sm:text-8xl text-green-500 ml-20 bg-black">
+            Safonov
+          </p>
+          <p className="text-white text-5xl ml-32 flex w-fit">
             Software Developer
           </p>
         </div>
-        <div className="col-start-1 row-start-1 flex flex-col md:flex-row mx-auto md:gap-8 xl:gap-12 mb-5 mt-16 p-2 rounded-xl h-fit bg-black z-10">
+        <div className="col-start-1 row-start-1 flex flex-col md:flex-row md:gap-8 xl:gap-12 mb-5 mt-16 p-2 rounded-xl h-fit bg-black z-10">
           <Link to="/about" id="about-me-link">
             {navLinkFormatter("/about", "About")}
           </Link>

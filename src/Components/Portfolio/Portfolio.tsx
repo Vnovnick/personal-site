@@ -1,72 +1,10 @@
 import React from "react";
 import runvid from "./RunTracker.mp4";
-import proppex from "../../Assets/images/Proppex.jpg";
 import discord from "./discord.svg";
 
 export default function Portfolio() {
   return (
     <div className="flex flex-col gap-10 m-auto w-full max-w-[1440px] py-5">
-      <p className="text-4xl text-white">Work</p>
-      <div className="flex w-full gap-5" id="port">
-        <div className="w-1/2 flex">
-          <img
-            src={proppex}
-            alt="proppex-logo"
-            className="mx-auto rounded-xl w-44 h-44 md:w-56 md:h-56"
-          />
-        </div>
-        <div className="w-1/2 p-4">
-          <p className="text-2xl text-white">
-            <a
-              className="text-cyan-200"
-              href="https://www.proppex.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Proppex
-            </a>{" "}
-            - Junior Frontend Developer
-          </p>
-          <p className="text-white mb-3 text-lg"> (March 2023 - Present)</p>
-          <p className="text-white text-lg">
-            As a Junior Frontend Developer at Proppex, I have developed many
-            core functionalites of the Proppex application such as the task
-            creation/calendar tool, the new user onboarding process, and the
-            Dashboard properties filter. I have also introduced initiatives to
-            clean up tech debt in the codebase and have accelerated project
-            completion time by mentoring interns throughout sprints. For my
-            role, I use React, Tailwind, Jest, Git, JSX, TypeScript, and
-            JavaScript.
-          </p>
-        </div>
-      </div>
-      <div className="flex w-full gap-5" id="port">
-        <div className="w-1/2" />
-        <div className="w-1/2 p-4 ml-auto">
-          <p className="text-2xl text-white">
-            <a
-              className="text-cyan-200"
-              href="https://www.proppex.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Proppex
-            </a>{" "}
-            - Frontend Developer Intern
-          </p>
-          <p className="text-white mb-3 text-lg">
-            {" "}
-            (September 2022 - March 2023)
-          </p>
-          <p className="text-white text-lg">
-            As a Frontend Developer Intern at Proppex, I work to create UI
-            elements and replicate designs created by our designer. I also am
-            often tasked with overseeing development processes such as backlog
-            prep, ticket creation, and peer mentoring, reporting directly to the
-            CTO.
-          </p>
-        </div>
-      </div>
       <p className="text-4xl text-white">Projects </p>
       <div className="flex w-full mx-auto gap-5" id="port">
         <div className="w-1/2">

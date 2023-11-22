@@ -1,17 +1,20 @@
 import React from "react";
 import image from "./bioImageComp.jpg";
 import { Link } from "react-router-dom";
+import SkillPill from "./SkillPill";
+import WorkExperienceBlock from "./WorkExperienceBlock";
+import { bioSkills } from "./BioConsts";
 
 export default function Bio() {
   return (
-    <div className="h-full m-auto w-full max-w-[1440px] py-5" id="bio">
+    <div className="h-full m-auto w-full max-w-[1440px] py-5 px-2" id="bio">
       <img
         src={image}
         alt="profile"
         className="h-auto min-w-[200px] max-w-[25%] float-right mx-5 rounded-lg"
         id="bio-image"
       />
-      <p className="text-white font-sans ml-5 text-lg md:text-xl">
+      {/* <p className="text-white font-sans ml-5 text-lg md:text-xl">
         I am a Junior Frontend Developer at Proppex from Northern California. As
         a{" "}
         <Link to="/work" id="work-link">
@@ -65,7 +68,60 @@ export default function Bio() {
         >
           Resume
         </a>
+      </p> */}
+      <p className="text-white text-lg md:text-xl">
+        I&apos;m a Software Developer with a passion for creating elegant and
+        effective applications. Coming from an artistic background, I believe in
+        the importance of creative solutions, organization, and high attention
+        to detail. These are qualities that I apply to any project I work on and
+        aim to constantly improve upon with every line of code I write.
+        <br />
+        <br />
+        Before becoming a software developer, I was a violinist and received a
+        Bachelor of Music (BM) degree in{" "}
+        <Link to="/performance-videos" id="perf-videos-link">
+          <span className="text-green-200 hover:text-green-300">
+            Violin Performance
+          </span>
+        </Link>{" "}
+        from the IU Jacobs&apos; School of Music, as well as finished a year
+        towards a Master's in Music at UNT.
       </p>
+      <div className="mt-10">
+        <div className="flex items-center">
+          <p className="text-white text-2xl">Experience</p>
+          <div className="grow bg-white h-[1px] mx-4" />
+        </div>
+        <div className="flex flex-col gap-y-2">
+          <WorkExperienceBlock
+            jobTitle="Junior Frontend Developer"
+            link="https://www.proppex.com/"
+            companyClassName="text-cyan-200"
+            company="Proppex"
+            description="Create new features for product MVP and beta testing and lead frontend development efforts across the entire application. Accelerate sprint goal completion through constant collaboration and peer mentoring."
+            workTimePeriod="March 2023 - Present"
+          />
+          <WorkExperienceBlock
+            jobTitle="Frontend Development Intern"
+            link="https://www.proppex.com/"
+            companyClassName="text-cyan-200"
+            company="Proppex"
+            description="Collaborate to iterate over existing features and build new components for the company's preliminary design library."
+            workTimePeriod="Sept 2022 - March 2023"
+          />
+        </div>
+      </div>
+      <div className="mt-10">
+        <div className="flex items-center">
+          <p className="text-white text-2xl">Skills</p>
+          <div className="grow bg-white h-[1px] mx-4" />
+        </div>
+        <div className="flex flex-wrap gap-1 w-full max-w-[600px]">
+          {bioSkills.map((skill) => (
+            <SkillPill text={skill} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
