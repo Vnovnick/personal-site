@@ -25,12 +25,12 @@ export default function Portfolio() {
         </a>
         <a
           className="w-full max-w-[600px] xl:w-1/2 p-4 group hover:bg-[#7289da]/20 bg-[#7289da]/10 h-[325px] duration-100 transition-all rounded-xl overflow-auto"
-          href="https://github.com/Vnovnick/run-tracker-ns"
+          href="https://github.com/Vnovnick/apex_discord_bot"
           target="_blank"
           rel="noreferrer"
         >
           <div>
-            <p className="text-white text-lg">Dec 2022 - Feb 2022</p>
+            <p className="text-white text-lg">Dec 2022 - Feb 2023</p>
             <div className="flex text-white items-center mb-3 justify-between">
               <p className="mr-2 text-2xl text-[#7289da]">Discord Stat Bot</p>
               <p className="text-white/80 group-hover:text-white mr-2 group-hover:mr-0 transition-all duration-100">
