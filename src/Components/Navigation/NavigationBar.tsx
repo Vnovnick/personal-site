@@ -95,7 +95,7 @@ export default function NavigationBar() {
             />
           </a>
         </div>
-        <div className="col-start-1 row-start-1 flex flex-col lg:flex-row text-green-400 text-lg mx-auto lg:gap-8 xl:gap-14 my-5 p-2 rounded-xl h-fit">
+        <div className="col-start-1 row-start-1 flex flex-col md:flex-row text-green-400 text-lg mx-auto lg:gap-8 xl:gap-14 my-5 p-2 rounded-xl h-fit">
           <Link to="/about" id="about-me-link">
             {navLinkFormatter("/about", "About")}
           </Link>

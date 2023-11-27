@@ -13,7 +13,7 @@ export default function PageContainer() {
           <NavigationBar />
         </div>
       )}
-      <ScrollDiv className="grow overflow-auto bg-black">
+      <ScrollDiv className="grow overflow-auto bg-black flex flex-col">
         <Outlet />
       </ScrollDiv>
     </div>

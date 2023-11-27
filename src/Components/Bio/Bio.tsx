@@ -3,7 +3,7 @@ import image from "./bioImageComp.jpg";
 import { Link } from "react-router-dom";
 import SkillPill from "./SkillPill";
 import WorkExperienceBlock from "./WorkExperienceBlock";
-import { bioSkills } from "./BioConsts";
+import { bioSkills } from "./BioDefinitions";
 
 export default function Bio() {
   return (
