@@ -14,11 +14,11 @@ export default function Portfolio() {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="grid group h-[350px]">
-            <div className="col-start-1 row-start-1 bg-[#7289da] w-[320px] h-[270px] md:w-[540px] md:h-[325px] rounded-xl group-hover:mt-1 group-hover:md:ml-1 duration-100 transition-all" />
+          <div className="grid group w-[330px] md:w-[560px] h-[350px]">
+            <div className="col-start-1 row-start-1 bg-[#7289da] w-[320px] h-[270px] md:w-[540px] md:h-[325px] rounded-xl duration-100 transition-all" />
             <img
               src={discordVid}
-              className="rounded-xl w-[320px] h-[270px] md:w-[540px] md:h-[325px] object-scale-down bg-[#36393e] mx-auto col-start-1 row-start-1 mt-5 ml-5 group-hover:mt-8 group-hover:ml-8 shadow-[0_5px_15px_5px] shadow-black/40 duration-100 transition-all"
+              className="rounded-xl w-[320px] h-[270px] md:w-[540px] md:h-[325px] object-scale-down bg-[#36393e] mx-auto col-start-1 row-start-1 mt-5 md:ml-5 group-hover:mt-8 md:group-hover:ml-8 shadow-[0_5px_15px_5px] shadow-black/40 duration-100 transition-all"
               alt="Discord Bot Demo Gif"
             />
           </div>
@@ -56,15 +56,15 @@ export default function Portfolio() {
         id="port"
       >
         <a
-          className="grid h-[350px] group"
+          className="grid h-[350px] w-[330px] md:w-[560px] group"
           href="https://github.com/Vnovnick/run-tracker-ns"
           target="_blank"
           rel="noreferrer"
         >
-          <div className="col-start-1 row-start-1 bg-amber-100 w-[320px] h-[270px] md:w-[540px] md:h-[325px] rounded-xl group-hover:mt-1 group-hover:ml-1 duration-100 transition-all" />
+          <div className="col-start-1 row-start-1 bg-amber-100 w-[320px] h-[270px] md:w-[540px] md:h-[325px] rounded-xl duration-100 transition-all" />
           <img
             src={runGif}
-            className="rounded-xl w-[320px] h-[270px] md:w-[540px] md:h-[325px] object-scale-down bg-[#ffeecc] mx-auto col-start-1 row-start-1 mt-5 ml-5 group-hover:mt-8 group-hover:ml-8 shadow-[0_5px_15px_5px] shadow-black/40 duration-100 transition-all"
+            className="rounded-xl w-[320px] h-[270px] md:w-[540px] md:h-[325px] object-scale-down bg-[#ffeecc] mx-auto col-start-1 row-start-1 mt-5 md:ml-5 group-hover:mt-8 md:group-hover:ml-8 shadow-[0_5px_15px_5px] shadow-black/40 duration-100 transition-all"
             alt="Run Tracker Demo Gif"
           />
         </a>
