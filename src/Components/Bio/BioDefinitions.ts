@@ -12,6 +12,7 @@ export const bioSkills = [
   "Jest",
   "React Query",
   "Node.js",
+  "SvelteKit",
   "PostgreSQL",
   "Git",
   "GitHub",
