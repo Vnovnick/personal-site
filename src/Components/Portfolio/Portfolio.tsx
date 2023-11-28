@@ -20,7 +20,7 @@ export default function Portfolio() {
           duration: "August - December 2022 (v1) | November 2023 (v2)",
           title: "This Site!",
           description:
-            "Single-page React application that utilizes both the Strava and Spotify APIs to show the songs a user has listened to over the course of a run. Once the user is logged in, they will have collapsible timelines of their song data as well as a display of their last 10 activities.",
+            "My Personal site built using React and TypeScript. Built to serve as an all-encompassing portfolio application showcasing my past and present development work as well as some snippets of my past ventures into violin performance and sound design. Hosted on GitHub Pages.",
           skills: [
             "TypeScript",
             "JavaScript",
