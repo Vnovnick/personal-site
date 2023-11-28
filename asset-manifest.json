@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.519d2f26.css",
-    "main.js": "/static/js/main.95f66472.js",
+    "main.css": "/static/css/main.c68f8265.css",
+    "main.js": "/static/js/main.24921b3f.js",
     "static/media/FS_Mast_v2.wav": "/static/media/FS_Mast_v2.700d81bf859745f9aa35.wav",
     "static/media/freeSamplesLoop.wav": "/static/media/freeSamplesLoop.bb080c71033b188a7d4a.wav",
     "static/media/runTracker.gif": "/static/media/runTracker.1b33dad41d7d66f2b343.gif",
@@ -9,16 +9,17 @@
     "static/media/bioImageComp.jpg": "/static/media/bioImageComp.dde019f658257212104f.jpg",
     "static/media/ecumenopolis.webp": "/static/media/ecumenopolis.4d1e30eb37555429b0ea.webp",
     "static/media/calmLoopCropped.jpg": "/static/media/calmLoopCropped.d55576d01225de74a975.jpg",
+    "static/media/personalSite.png": "/static/media/personalSite.89380ce43616b5775aae.png",
     "static/media/gitHubWhiteLogo.png": "/static/media/gitHubWhiteLogo.e06a357a770a001ad049.png",
     "static/media/treble-clef.svg": "/static/media/treble-clef.1a45a42deebad6258b20fafb097111d0.svg",
     "index.html": "/index.html",
     "static/media/playButton.svg": "/static/media/playButton.cf40cbd6730dde9ab0fce398eb19a2cf.svg",
     "static/media/pause.svg": "/static/media/pause.a156feb090c82bf2f49f15f47f0ad2aa.svg",
-    "main.519d2f26.css.map": "/static/css/main.519d2f26.css.map",
-    "main.95f66472.js.map": "/static/js/main.95f66472.js.map"
+    "main.c68f8265.css.map": "/static/css/main.c68f8265.css.map",
+    "main.24921b3f.js.map": "/static/js/main.24921b3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.519d2f26.css",
-    "static/js/main.95f66472.js"
+    "static/css/main.c68f8265.css",
+    "static/js/main.24921b3f.js"
   ]
 }
