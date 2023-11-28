@@ -19,7 +19,7 @@ export default function WorkExperienceBlock({
 }: WorkExperienceBlockProps) {
   return (
     <a href={link} target="_blank" rel="noreferrer" className="w-fit">
-      <div className="text-white bg-green-900/30 gap-5 w-full max-w-[540px] rounded-2xl p-3 group hover:bg-green-900/50 transition-all duration-100">
+      <div className="text-white bg-green-900/30 gap-5 w-full max-w-[600px] rounded-2xl p-3 group hover:bg-green-900/50 transition-all duration-100">
         <p className="text-white/80 text-base whitespace-nowrap group-hover:text-white transition-all duration-100">
           {workTimePeriod}
         </p>
