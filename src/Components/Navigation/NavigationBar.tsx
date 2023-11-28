@@ -1,5 +1,4 @@
 import React from "react";
-import "./NavigationBar.scss";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import gitHub from "../../Assets/images/gitHubWhiteLogo.png";
@@ -7,24 +6,6 @@ import linkedIn from "../../Assets/images/linkedIn.png";
 
 export default function NavigationBar() {
   const location = useLocation();
-
-  // window.onload = () => {
-  //   fullNameResize();
-  // };
-
-  // const fullNameResize = (): void => {
-  //   let winWidth: number = window.innerWidth;
-  //   if (winWidth < 1270) {
-  //     (document.getElementById("fullName") as HTMLFormElement).innerHTML =
-  //       "Nick S.";
-  //   } else if (winWidth >= 1271) {
-  //     (document.getElementById("fullName") as HTMLFormElement).innerHTML =
-  //       "Nicholas Safonov";
-  //   }
-  // };
-  // window.addEventListener("resize", () => {
-  //   fullNameResize();
-  // });
 
   const navLinkFormatter = (link: string, linkName: string) => {
     return (
@@ -48,22 +29,6 @@ export default function NavigationBar() {
   return (
     <div className="bg-black h-fit">
       <div className="w-full max-w-[1440px] flex mx-auto">
-        {/* <div className="col-start-1 row-start-1 grid w-full px-5 mt-3">
-          <div className="w-full col-start-1 row-start-1">
-            <img
-              alt="Treble clef"
-              src={treble}
-              className="w-32 h-32 -mt-5 -ml-5 rotate-[-7deg]"
-            />
-          </div>
-          <div className="col-start-1 row-start-1 flex flex-col gap-y-4">
-            <div className="w-full h-0.5 bg-white/80" />
-            <div className="w-full h-0.5 bg-white/80" />
-            <div className="w-full h-0.5 bg-white/80" />
-            <div className="w-full h-0.5 bg-white/80" />
-            <div className="w-full h-0.5 bg-white/80" />
-          </div>
-        </div> */}
         <div className="flex items-center ml-5">
           <Link to="/" id="landing-link">
             <p className="text-5xl text-green-600 border-2 border-green-600 px-3 py-1 rounded-lg hover:bg-green-900/50">

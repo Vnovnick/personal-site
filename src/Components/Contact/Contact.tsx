@@ -4,16 +4,35 @@ import linkedIn from "../../Assets/images/linkedIn.png";
 
 export default function Contact() {
   return (
-    <div className="grid h-full max-h-[700px] w-full mx-auto max-w-[1440px] bg-black">
+    <div className="grid h-full max-h-[700px] w-full mx-auto max-w-[1000px] bg-black">
       <div className="grid col-start-1 row-start-1">
-        <div className="col-start-1 row-start-1 bg-white/10" />
-        <div className="col-start-1 row-start-1 bg-green-900/30 m-2" />
-        <div className="col-start-1 row-start-1 bg-green-800/30 m-4" />
-        <div className="col-start-1 row-start-1 bg-black m-6 pt-6 pl-6">
-          <p className="text-white text-2xl">Email: safonov.nick10@gmail.com</p>
-          <div className="flex items-center my-3">
-            <p className="text-white text-2xl">Links: </p>
-            <div className="flex">
+        <div className="col-start-1 row-start-1 bg-white/10 rounded-xl" />
+        <div className="col-start-1 row-start-1 bg-green-900/30 m-2 rounded-xl" />
+        <div className="col-start-1 row-start-1 bg-green-800/30 m-4 rounded-xl" />
+        <div className="col-start-1 row-start-1 bg-black m-6 pt-6 pl-6 rounded-xl flex flex-col gap-3">
+          <p className="text-green-200 text-4xl">Contact</p>
+          <p className="text-white text-3xl">
+            Send me a message or get in touch via{" "}
+            <a
+              href="https://www.linkedin.com/in/nicholas-safonov/"
+              target="_blank"
+              className="text-blue-200 hover:text-blue-400 transition-all duration-100"
+            >
+              LinkedIn
+            </a>
+            !
+          </p>
+          <div>
+            <a href="mailto: safonov.nick10@gmail.com">
+              <div className="text-white/80 hover:text-white text-lg py-3 px-6 bg-green-900/30 group hover:bg-green-900/50 rounded-2xl transition-all duration-100 w-fit">
+                Send a Message{" "}
+                <span className="pl-0 group-hover:pl-2 transition-all duration-100">
+                  {">"}
+                  {">"}
+                </span>
+              </div>
+            </a>
+            <div className="flex mt-3">
               <a
                 href="https://github.com/Vnovnick"
                 className="grid place-items-center group"
@@ -41,11 +60,16 @@ export default function Contact() {
             </div>
           </div>
           <a
-            className="text-green-200 hover:text-green-300 text-xl"
             href="https://drive.google.com/file/d/1SFLxL2B9wNtQq56UctmMKEGAvC60fL26/view?usp=sharing"
             target="_blank"
           >
-            Resume
+            <div className="text-white/80 hover:text-white text-lg py-3 px-6 bg-green-900/30 group hover:bg-green-900/50 rounded-2xl transition-all duration-100 w-fit">
+              My Resume{" "}
+              <span className="pl-0 group-hover:pl-2 transition-all duration-100">
+                {">"}
+                {">"}
+              </span>
+            </div>
           </a>
         </div>
       </div>
