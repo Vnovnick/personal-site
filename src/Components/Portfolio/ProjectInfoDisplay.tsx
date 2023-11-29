@@ -48,6 +48,7 @@ export default function ProjectInfoDisplay({
           src={gif}
           className={`rounded-xl w-[320px] h-[270px] md:w-[540px] md:h-[325px] object-scale-down mx-auto col-start-1 row-start-1 mt-5 md:ml-5 group-hover:mt-8 md:group-hover:ml-8 shadow-[0_5px_15px_5px] shadow-black/40 duration-100 transition-all ${gifClassName}`}
           alt={gifAlt}
+          loading="lazy"
         />
       </a>
       <a

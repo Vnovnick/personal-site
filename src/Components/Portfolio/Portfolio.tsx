@@ -1,9 +1,9 @@
 import React from "react";
-import runGif from "./assets/runTracker.gif";
-import discordVid from "./assets/discordGif.gif";
+import discordImg from "./assets/discordimg.png";
+import runTrackerimg from "./assets/runTrackerimg.png";
 import ProjectInfoDisplay from "./ProjectInfoDisplay";
-import personalSiteImg from "./assets/personalSite.png";
 import jourbooks from "./assets/jourbooksimg.png";
+import siteImg from "./assets/updatedSiteImg.png";
 
 export default function Portfolio() {
   return (
@@ -47,7 +47,7 @@ export default function Portfolio() {
         skillPillClassName="bg-gray-500/30 text-green-100"
       />
       <ProjectInfoDisplay
-        gif={personalSiteImg}
+        gif={siteImg}
         link="https://github.com/Vnovnick/personal-site"
         gifAlt="Personal Site screenshot"
         containerClassName="bg-green-900/30"
@@ -72,9 +72,9 @@ export default function Portfolio() {
         skillPillClassName="bg-green-500/30 text-green-200"
       />
       <ProjectInfoDisplay
-        gif={discordVid}
+        gif={discordImg}
         link="https://github.com/Vnovnick/apex_discord_bot"
-        gifAlt="Discord Bot Demo Gif"
+        gifAlt="Discord Bot Demo img"
         containerClassName="bg-[#7289da]/20"
         gifClassName="bg-[#36393e]"
         gifbgClassName="bg-[#7289da]"
@@ -97,9 +97,9 @@ export default function Portfolio() {
         skillPillClassName="text-white bg-[#7289da]/30"
       />
       <ProjectInfoDisplay
-        gif={runGif}
+        gif={runTrackerimg}
         link="https://github.com/Vnovnick/run-tracker-ns"
-        gifAlt="Run Tracker Demo Gif"
+        gifAlt="Run Tracker Demo img"
         containerClassName="bg-amber-100/10"
         titleClassName="text-amber-100"
         gifClassName="bg-[#ffeecc]"
