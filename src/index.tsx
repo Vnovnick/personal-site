@@ -9,6 +9,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import SoundDesign from "./Components/SoundDesign/SoundDesign";
 import Contact from "./Components/Contact/Contact";
 import LandingPage from "./Components/Landing/LandingPage";
+import Extras from "./Components/Extras/Extras";
 
 // still not sure why its not working
 const root = ReactDOM.createRoot(
@@ -25,6 +26,7 @@ root.render(
           <Route path="/performance-videos" element={<PerformanceVideos />} />
           <Route path="/sound-design" element={<SoundDesign />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/extras" element={<Extras />} />
         </Route>
       </Routes>
     </HashRouter>

@@ -67,11 +67,8 @@ export default function NavigationBar() {
           <Link to="/projects" id="work-link">
             {navLinkFormatter("/projects", "Projects")}
           </Link>
-          <Link to="/performance-videos" id="perf-videos-link">
-            {navLinkFormatter("/performance-videos", "Performance Videos")}
-          </Link>
-          <Link to="/sound-design" id="sound-design-link">
-            {navLinkFormatter("/sound-design", "Sound Design")}
+          <Link to="/extras" id="extras-link">
+            {navLinkFormatter("/extras", "Extras")}
           </Link>
           <Link to="/contact" id="contact-link">
             {navLinkFormatter("/contact", "Contact")}

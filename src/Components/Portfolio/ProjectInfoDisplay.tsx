@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import SkillPill from "../Bio/SkillPill";
 
 interface ProjectInfoDisplayProps {
@@ -11,7 +11,7 @@ interface ProjectInfoDisplayProps {
   descriptionFields: {
     duration: string;
     title: string;
-    description: string;
+    description: ReactNode;
     skills: string[];
   };
   skillPillClassName: string;

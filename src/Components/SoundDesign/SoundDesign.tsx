@@ -20,7 +20,7 @@ export default function SoundDesign() {
       </div>
       <div className="text-center flex flex-col items-center">
         <p className="text-4xl py-10">Music</p>
-        <div className="flex lg:flex-col gap-10">
+        <div className="flex lg:flex-col gap-2 md:gap-10">
           <AudioPlayer
             title="Rain Loop"
             audioSrc={calmLoop}

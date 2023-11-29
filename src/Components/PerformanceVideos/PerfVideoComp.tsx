@@ -1,12 +1,13 @@
-import React, { ReactElement } from "react";
+import React, { ReactNode } from "react";
 
 interface PerfVideoCompProps {
   src: string;
-  description: ReactElement | JSX.Element;
+  description: ReactNode;
   left?: boolean;
   right?: boolean;
   divClassName?: string;
   id?: string;
+  link: string;
 }
 
 const defaultProps = {
@@ -23,6 +24,7 @@ export default function PerfVideoComp({
   right,
   divClassName,
   id,
+  link,
 }: PerfVideoCompProps) {
   return (
     <div
@@ -37,12 +39,24 @@ export default function PerfVideoComp({
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           ></iframe>
-          {description}
+          <a
+            className="text-white flex w-fit items-center mx-auto text-xl lg:text-2xl text-center bg-green-900/30 hover:bg-green-900/50 transition-all duration-100 p-5 rounded-xl"
+            href={link}
+            target="_blank"
+          >
+            {description}
+          </a>
         </>
       )}
       {right && (
         <>
-          {description}
+          <a
+            className="text-white flex w-fit items-center mx-auto text-xl lg:text-2xl text-center bg-green-900/30 hover:bg-green-900/50 transition-all duration-100 p-5 rounded-xl"
+            href={link}
+            target="_blank"
+          >
+            {description}
+          </a>
           <iframe
             className="embed-vid w-full h-[75%] lg:h-full lg:w-1/2"
             src={src}

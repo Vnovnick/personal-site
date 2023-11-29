@@ -108,18 +108,15 @@ export default function LandingPage() {
             Software Developer
           </p>
         </div>
-        <div className="col-start-1 row-start-1 flex flex-col md:flex-row md:gap-8 xl:gap-11 mb-5 mt-16 p-2 rounded-xl h-fit bg-black z-10">
+        <div className="col-start-1 row-start-1 flex flex-col md:flex-row md:gap-8 xl:gap-14 mb-5 mt-16 p-2 rounded-xl h-fit bg-black z-10">
           <Link to="/about" id="about-me-link">
             {navLinkFormatter("/about", "About")}
           </Link>
           <Link to="/projects" id="work-link">
             {navLinkFormatter("/projects", "Projects")}
           </Link>
-          <Link to="/performance-videos" id="perf-videos-link">
-            {navLinkFormatter("/performance-videos", "Performance Videos")}
-          </Link>
-          <Link to="/sound-design" id="sound-design-link">
-            {navLinkFormatter("/sound-design", "Sound Design")}
+          <Link to="/extras" id="extras-link">
+            {navLinkFormatter("/extras", "Extras")}
           </Link>
           <Link to="/contact" id="contact-link">
             {navLinkFormatter("/contact", "Contact")}
