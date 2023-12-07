@@ -1,0 +1,34 @@
+#notes {
+    animation: fadeInAnimation ease 1.7s;
+}
+
+#repeat-dots {
+    animation: fadeInAnimation ease 1.5s;
+}
+
+#repeat {
+    animation: reduceWidth ease-out 1.5s;
+}
+
+#staff {
+    animation: staffCollapse ease-out 1.5s, fadeInAnimation ease-out 1.5s;
+}
+
+@keyframes staffCollapse {
+    from {column-gap: 100px;}
+    to {column-gap: 16px;}
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes reduceWidth {
+    from {width: 410px;}
+    to {width: 74px;}
+}

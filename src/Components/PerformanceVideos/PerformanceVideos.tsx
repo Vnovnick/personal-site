@@ -1,6 +1,6 @@
 import React from "react";
 import PerfVideoComp from "./PerfVideoComp";
-import "./PerformanceVideos.scss";
+import "./PerformanceVideos.css";
 
 const scrollTo = (target: string) =>
   (document.getElementById(target) as HTMLFormElement).scrollIntoView({

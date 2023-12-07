@@ -1,10 +1,14 @@
 import React from "react";
 import gitHubImage from "../../Assets/images/gitHubWhiteLogo.png";
 import linkedIn from "../../Assets/images/linkedIn.png";
+import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div className="grid h-full max-h-[700px] w-full mx-auto max-w-[1000px] bg-black">
+    <div
+      className="grid h-full max-h-[700px] w-full mx-auto max-w-[1000px] bg-black"
+      id="contact"
+    >
       <div className="grid col-start-1 row-start-1">
         <div className="col-start-1 row-start-1 bg-white/10 rounded-xl" />
         <div className="col-start-1 row-start-1 bg-green-900/30 m-2 rounded-xl" />

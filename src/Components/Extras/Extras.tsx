@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import PerformanceVideos from "../PerformanceVideos/PerformanceVideos";
 import SoundDesign from "../SoundDesign/SoundDesign";
+import "./Extras.css";
 
 export default function Extras() {
   const [pageView, setPageView] = useState(true);
   return (
-    <div className="w-full max-w-[1440px] mx-auto flex flex-col">
+    <div className="w-full max-w-[1440px] mx-auto flex flex-col" id="extras">
       <div className="mx-auto flex gap-x-3 md:gap-x-24 md:gap-x-44 text-lg">
         <button
           type="button"

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import SkillPill from "./SkillPill";
 import WorkExperienceBlock from "./WorkExperienceBlock";
 import { bioSkills } from "./BioDefinitions";
+import "./Bio.css";
 
 export default function Bio() {
   return (

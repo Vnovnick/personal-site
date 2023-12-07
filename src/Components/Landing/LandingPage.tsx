@@ -3,6 +3,7 @@ import treble from "../Navigation/treble-clef.svg";
 import { Link, useLocation } from "react-router-dom";
 import gitHub from "../../Assets/images/gitHubWhiteLogo.png";
 import linkedIn from "../../Assets/images/linkedIn.png";
+import "./LandingPage.css";
 
 export default function LandingPage() {
   const location = useLocation();
@@ -26,7 +27,7 @@ export default function LandingPage() {
     );
   };
   return (
-    <div className="h-full mx-auto w-full max-w-[1100px] grid">
+    <div className="h-full mx-auto w-full max-w-[1100px] grid" id="landing">
       <div className="col-start-1 row-start-1 grid w-full max-w-[540px] mx-auto px-5">
         <div className="w-fit col-start-1 row-start-1 flex flex-col">
           <img
@@ -34,7 +35,10 @@ export default function LandingPage() {
             src={treble}
             className="w-32 h-32 -mt-5 -ml-6 rotate-90"
           />
-          <div className="flex flex-col font-semibold text-lg justify-between mx-auto h-4/5">
+          <div
+            className="flex flex-col font-semibold text-lg justify-between mx-auto h-4/5"
+            id="notes"
+          >
             <div className="group rotate-90 flex flex-col gap-2">
               <p className="text-white mt-2 text-green-300">
                 {"<"} {">"}
@@ -80,15 +84,21 @@ export default function LandingPage() {
               </p>
             </div>
           </div>
-          <div className="mt-auto gap-5 flex flex-col">
-            <div className="flex gap-x-3 ml-7">
+          <div className="mt-auto gap-3 flex flex-col">
+            <div className="flex gap-x-3 ml-7" id="repeat-dots">
               <div className="w-1 h-1 rounded bg-white" />
               <div className="w-1 h-1 rounded bg-white" />
             </div>
-            <div className="h-1.5 w-[74px] bg-white" />
+            <div className="w-[74px]" id="repeat">
+              <div className="h-[2px] w-full bg-white" />
+              <div className="h-1.5 w-full bg-white mt-1.5" />
+            </div>
           </div>
         </div>
-        <div className="col-start-1 row-start-1 flex gap-x-4 w-fit h-full">
+        <div
+          className="col-start-1 row-start-1 flex gap-x-4 w-fit h-full"
+          id="staff"
+        >
           <div className="h-full w-0.5 bg-white/80" />
           <div className="h-full w-0.5 bg-white/80" />
           <div className="h-full w-0.5 bg-white/80" />

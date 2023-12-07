@@ -4,10 +4,14 @@ import runTrackerimg from "./assets/runTrackerimg.png";
 import ProjectInfoDisplay from "./ProjectInfoDisplay";
 import jourbooks from "./assets/jourbooksimg.png";
 import siteImg from "./assets/updatedSiteImg.png";
+import "./Portfolio.css";
 
 export default function Portfolio() {
   return (
-    <div className="flex flex-col gap-8 m-auto w-full max-w-[1440px] py-5 px-3">
+    <div
+      className="flex flex-col gap-8 m-auto w-full max-w-[1440px] py-5 px-3"
+      id="portfolio"
+    >
       <ProjectInfoDisplay
         gif={jourbooks}
         link="https://github.com/Vnovnick/jourbooks"
