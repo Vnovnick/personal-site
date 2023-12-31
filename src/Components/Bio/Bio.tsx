@@ -25,7 +25,7 @@ export default function Bio() {
         <br />
         Before becoming a software developer, I was a violinist and received a
         Bachelor of Music (BM) degree in{" "}
-        <Link to="/performance-videos" id="perf-videos-link">
+        <Link to="/extras" id="perf-videos-link">
           <span className="text-green-200 hover:text-green-300">
             Violin Performance
           </span>

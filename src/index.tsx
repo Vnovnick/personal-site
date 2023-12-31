@@ -4,9 +4,7 @@ import { Route, Routes, HashRouter } from "react-router-dom";
 import "./Assets/main.css";
 import Bio from "./Components/Bio/Bio";
 import PageContainer from "./Components/PageContainer";
-import PerformanceVideos from "./Components/PerformanceVideos/PerformanceVideos";
 import Portfolio from "./Components/Portfolio/Portfolio";
-import SoundDesign from "./Components/SoundDesign/SoundDesign";
 import Contact from "./Components/Contact/Contact";
 import LandingPage from "./Components/Landing/LandingPage";
 import Extras from "./Components/Extras/Extras";
@@ -23,8 +21,6 @@ root.render(
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<Bio />} />
           <Route path="/projects" element={<Portfolio />} />
-          <Route path="/performance-videos" element={<PerformanceVideos />} />
-          <Route path="/sound-design" element={<SoundDesign />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/extras" element={<Extras />} />
         </Route>
