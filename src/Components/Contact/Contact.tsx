@@ -64,7 +64,7 @@ export default function Contact() {
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1SqeODO_SdmCIXXNNUTcB8cssU1HTb0Sy/view?usp=sharing"
+            href="https://drive.google.com/file/d/15We4s-twqCGpLUhPt2MaX85h-3CQkn2h/view?usp=sharing"
             target="_blank"
           >
             <div className="text-white/80 hover:text-white text-lg py-3 px-6 bg-green-900/30 group hover:bg-green-900/50 rounded-2xl transition-all duration-100 w-fit">
